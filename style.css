@@ -202,3 +202,36 @@ Add in the other stuff from index.html as well*/
 }
 
 
+/* makes text appear when hover */
+
+.container {
+    position: relative;
+    text-align: center;
+  }
+  
+  .pic-hover {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center; 
+  }
+  
+  .container:hover .picture {
+    opacity: 0.3;
+  }
+  
+  .container:hover .pic-hover {
+    opacity: 1;
+  }
+  
+  .text {
+    color: #2B3927;
+    font-size: 25px;
+    line-height: 27px;
+  }
+
+  /* ends make text appear when hover */
