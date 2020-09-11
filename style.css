@@ -17,6 +17,12 @@ img {
     padding: 10px;
 }
 
+/* .recipe p {
+    font: arial;
+    font-size: 14px;
+    /* background-color: yellow ; 
+} */ 
+
 .jam-list {
     text-align: center;
     border: 3px solid purple;
