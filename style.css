@@ -95,13 +95,26 @@ Add in the other stuff from index.html as well*/
     z-index:2;
 }
 
-/* Make sidebar into topbar for screens under 700px wide */
-@media screen and (max-width: 700px) {
+.recipe-sidebar {
+    width: 15%;
+}
+
+.recipe-block {
+    margin-left:25%;
+}
+
+/* Make sidebar into topbar for screens under 800px wide */
+@media screen and (max-width: 800px) {
     .w3-sidebar {
       width: 100%;
       height: auto;
       position: relative;
     }
+    .recipe-block {
+        margin-top: 100px;
+        margin-left: 0;
+    }
+
 }
 
 .w3-bar-block {
@@ -293,6 +306,7 @@ Add in the other stuff from index.html as well*/
   .recipe-row {
       display: flex;
   }
+  /* style="width:100%" */
   .recipe-picture-column{
       flex: 25%;
       padding: 5px;
@@ -300,4 +314,12 @@ Add in the other stuff from index.html as well*/
   .recipe-column {
     flex: 75%;
     padding: 5px; 
+  }
+
+  @media screen and (max-width: 500px) {
+    .recipe-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
   }
