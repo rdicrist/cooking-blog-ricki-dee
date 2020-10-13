@@ -87,12 +87,21 @@ Add in the other stuff from index.html as well*/
 
 .w3-sidebar{
     height:100%;
-    width:200px;
+    /* width:200px; */
     background-color:#fff;
     position:fixed!important;
     overflow:auto;
     display:none;
     z-index:2;
+}
+
+/* Make sidebar into topbar for screens under 700px wide */
+@media screen and (max-width: 700px) {
+    .w3-sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
 }
 
 .w3-bar-block {
@@ -263,7 +272,7 @@ Add in the other stuff from index.html as well*/
   }
   
   /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 700px) {
     .column {
       flex: 50%;
       max-width: 50%;
@@ -271,10 +280,24 @@ Add in the other stuff from index.html as well*/
   }
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 700px) {
     .column {
       flex: 100%;
       max-width: 100%;
     }
   }
   /* end image grid */
+
+  /* indv. recipe page stuff */
+
+  .recipe-row {
+      display: flex;
+  }
+  .recipe-picture-column{
+      flex: 25%;
+      padding: 5px;
+  }
+  .recipe-column {
+    flex: 75%;
+    padding: 5px; 
+  }
