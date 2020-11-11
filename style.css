@@ -1,3 +1,7 @@
+html {
+    background-color: #FCEEF3;
+}
+
 img {
     display: block;
     margin-left: auto;
@@ -55,6 +59,8 @@ Add in the other stuff from index.html as well*/
     width:100%;
     z-index:1;
     top:0;
+    left: 0;
+    background-color: #EB99B8;
 }
 
 .w3-white{
@@ -87,12 +93,23 @@ Add in the other stuff from index.html as well*/
 
 .w3-sidebar{
     height:100%;
-    /* width:200px; */
-    background-color:#fff;
+    width:15%;
+    background-color:#F6CBD6;
     position:fixed!important;
     overflow:auto;
     display:none;
     z-index:2;
+}
+
+.sidebar-text{
+    /* TODO: come back to this */
+    /* overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    display: block; */
+    line-height: 2em;
+    font-size:2vw;
+    position: relative;
 }
 
 .recipe-sidebar {
@@ -106,9 +123,12 @@ Add in the other stuff from index.html as well*/
 /* Make sidebar into topbar for screens under 800px wide */
 @media screen and (max-width: 800px) {
     .w3-sidebar {
-      width: 100%;
-      height: auto;
-      position: relative;
+        width: 50%;
+        height: auto; 
+        position: relative;
+    }
+    .sidebar-text{
+        font-size:7vw;
     }
     .recipe-block {
         margin-top: 100px;
@@ -153,7 +173,7 @@ Add in the other stuff from index.html as well*/
     padding:8px 16px;
     float:left;
     /* float:none; */
-    width:auto;
+    width:80%;
     /* width:100%; */
     border:none;
     display:block;
@@ -181,7 +201,7 @@ Add in the other stuff from index.html as well*/
     -ms-user-select:none;
     user-select:none;
 
-    text-align:right;
+    text-align:center;
 }
 
 .w3-button:hover{
@@ -190,6 +210,10 @@ Add in the other stuff from index.html as well*/
 }
 
 /* my own header */
+
+/* .header {
+    background-color: #ECBAE4;
+} */
 
 .header ul {
     list-style-type: none;
