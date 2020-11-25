@@ -9,6 +9,10 @@ img {
     width: 40%;
 }
 
+.clear {
+    clear: both;
+}
+
 .title {
     text-align: center;
 }
@@ -373,7 +377,6 @@ Add in the other stuff from index.html as well*/
     .index-recipe-block img{
         width: 100%;  
         height: 100%;
-
     }
 
 
