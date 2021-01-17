@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Cooking ONLY!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="style/css/style.css" />
+    <script src="scripts/main.js"></script>
     <link rel="import" href="h1.html">
     <link rel="icon" 
       type="image/png" 
-      href="images/logo.png" />
+      href="style/images/logo.png" />
 </head>
 
 <body>
@@ -22,12 +22,12 @@
     <a  href="#recipetwo" onclick="sb_close('indexSidebar')" class="w3-bar-item w3-button">Recipe Two</a>
     <a  href="#recipethree" onclick="sb_close('indexSidebar')" class="w3-bar-item w3-button">Recipe Three</a>
     <a  href="#aboutme" onclick="sb_close('indexSidebar')" class="w3-bar-item w3-button">About Me</a>
-    <a  href="jam.html" onclick="sb_close('indexSidebar')" class="w3-bar-item w3-button">Jam</a>
+    <a  href="recipe-pages/jam.html" onclick="sb_close('indexSidebar')" class="w3-bar-item w3-button">Jam</a>
     <!-- <a class="sidebar-text" href="#recipeone" onclick="sb_close()" class="w3-bar-item w3-button">Recipe One</a>
     <a class="sidebar-text" href="#recipetwo" onclick="sb_close()" class="w3-bar-item w3-button">Recipe Two</a>
     <a class="sidebar-text" href="#recipethree" onclick="sb_close()" class="w3-bar-item w3-button">Recipe Three</a>
     <a class="sidebar-text" href="#aboutme" onclick="sb_close()" class="w3-bar-item w3-button">About Me</a>
-    <a class="sidebar-text" href="jam.html" onclick="sb_close()" class="w3-bar-item w3-button">Jam</a> -->
+    <a class="sidebar-text" href="recipe-pages/jam.html" onclick="sb_close()" class="w3-bar-item w3-button">Jam</a> -->
 </nav>
 
  <!-- Top menu  -->
@@ -38,6 +38,12 @@
       <div class="w3-right w3-padding-16">Ricki Dee</div>
     </div>
 </div> -->
+
+<!-- TODO: put in underline border for each recipe div, remove border from actual recipe 
+path variable!!!!
+fix picture links
+fix sidebar // partial // recipe pages, i think index is fine?
+h1.html is weird / wrong, need to put it into actual partial-->
 
 <div class="w3-top">
     <div class="w3-xlarge header">
@@ -55,14 +61,14 @@
         <hr id="jam">
             <div class='container'>
                 <div class='picture'>
-                    <a href="jam.html"><img src="images/jam.jpg" alt="Recipe Name" style="width:100%"></a>
+                    <a href="recipe-pages/jam.html"><img src="style/images/jam.jpg" alt="Recipe Name" style="width:100%"></a>
                 </div>
                 <div class='pic-hover'>
                     <h2>Jam change!</h2>
                     <ul>
-                        <li><a href="jam.html#recipeone">rasp</a></li>
-                        <li><a href="jam.html#recipetwo">banana</a></li>
-                        <li><a href="jam.html#recipethree">peach</a></li>
+                        <li><a href="recipe-pages/jam.html#recipeone">rasp</a></li>
+                        <li><a href="recipe-pages/jam.html#recipetwo">banana</a></li>
+                        <li><a href="recipe-pages/jam.html#recipethree">peach</a></li>
                     </ul>
                 </div>
             </div>
@@ -73,14 +79,14 @@
         <hr id="crockpot">
         <div class='container'>
             <div class='picture'>
-                <a href="crockpot.html"><img src="images/crockpot.jpg" alt="Recipe Name" style="width:100%"></a>
+                <a href="recipe-pages/crockpot.html"><img src="style/images/crockpot.jpg" alt="Recipe Name" style="width:100%"></a>
             </div>
             <div class='pic-hover'>
                 <h2>Crockpot Recipes!</h2>
                     <ul>
-                        <li><a href="crockpot.html#recipeone">crockpot1</a></li>
-                        <li><a href="crockpot.html#recipetwo">crockpot2</a></li>
-                        <li><a href="crockpot.html#recipethree">crockpot3</a></li>
+                        <li><a href="recipe-pages/crockpot.html#recipeone">crockpot1</a></li>
+                        <li><a href="recipe-pages/crockpot.html#recipetwo">crockpot2</a></li>
+                        <li><a href="recipe-pages/crockpot.html#recipethree">crockpot3</a></li>
                     </ul>
                 </div>
             </div>
@@ -91,14 +97,14 @@
         <hr id="dessert">
         <div class='container'>
             <div class='picture'>
-                <a href="dessert.html"><img src="images/desserts.jpg" alt="Recipe Name" style="width:100%"></a>
+                <a href="recipe-pages/crockpot.html"><img src="style/images/desserts.jpg" alt="Recipe Name" style="width:100%"></a>
             </div>
             <div class='pic-hover'>
                 <h2>Dessert Recipes!</h2>
                     <ul>
-                        <li><a href="dessert.html#recipeone">dessert1</a></li>
-                        <li><a href="dessert.html#recipetwo">dessert2</a></li>
-                        <li><a href="dessert.html#recipethree">dessert3</a></li>
+                        <li><a href="recipe-pages/crockpot.html#recipeone">dessert1</a></li>
+                        <li><a href="recipe-pages/crockpot.html#recipetwo">dessert2</a></li>
+                        <li><a href="recipe-pages/crockpot.html#recipethree">dessert3</a></li>
                     </ul>
                 </div>
             </div>
@@ -111,14 +117,14 @@
         <hr id="veggie">
         <div class='container'>
             <div class='picture'>
-                <a href="crockpot.html"><img src="images/vegetables.jpg" alt="Recipe Name" style="width:100%"></a>
+                <a href="recipe-pages/crockpot.html"><img src="style/images/vegetables.jpg" alt="Recipe Name" style="width:100%"></a>
             </div>
             <div class='pic-hover'>
                 <h2>Veggie Recipes!</h2>
                     <ul>
-                        <li><a href="veggie.html#recipeone">veggie1</a></li>
-                        <li><a href="veggie.html#recipetwo">veggie2</a></li>
-                        <li><a href="veggie.html#recipethree">veggie3</a></li>
+                        <li><a href="recipe-pages/veggie.html#recipeone">veggie1</a></li>
+                        <li><a href="recipe-pages/veggie.html#recipetwo">veggie2</a></li>
+                        <li><a href="recipe-pages/veggie.html#recipethree">veggie3</a></li>
                     </ul>
                 </div>
             </div>
@@ -129,14 +135,68 @@
         <hr id="veggie2">
         <div class='container'>
             <div class='picture'>
-                <a href="crockpot.html"><img src="images/vegetables.jpg" alt="Recipe Name" style="width:100%"></a>
+                <a href="recipe-pages/crockpot.html"><img src="style/images/vegetables.jpg" alt="Recipe Name" style="width:100%"></a>
             </div>
             <div class='pic-hover'>
                 <h2>Crockpot Recipes!</h2>
                     <ul>
-                        <li><a href="crockpot.html#recipeone">crockpot1</a></li>
-                        <li><a href="crockpot.html#recipetwo">crockpot2</a></li>
-                        <li><a href="crockpot.html#recipethree">crockpot3</a></li>
+                        <li><a href="recipe-pages/crockpot.html#recipeone">crockpot1</a></li>
+                        <li><a href="recipe-pages/crockpot.html#recipetwo">crockpot2</a></li>
+                        <li><a href="recipe-pages/crockpot.html#recipethree">crockpot3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </hr>
+    </div>
+
+    <div class="index-recipe-block clear">
+        <hr id="veggie2">
+        <div class='container'>
+            <div class='picture'>
+                <a href="recipe-pages/crockpot.html"><img src="style/images/vegetables.jpg" alt="Recipe Name" style="width:100%"></a>
+            </div>
+            <div class='pic-hover'>
+                <h2>Crockpot Recipes!</h2>
+                    <ul>
+                        <li><a href="recipe-pages/crockpot.html#recipeone">crockpot1</a></li>
+                        <li><a href="recipe-pages/crockpot.html#recipetwo">crockpot2</a></li>
+                        <li><a href="recipe-pages/crockpot.html#recipethree">crockpot3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </hr>
+    </div>
+
+    <div class="index-recipe-block clear">
+        <hr id="veggie2">
+        <div class='container'>
+            <div class='picture'>
+                <a href="recipe-pages/crockpot.html"><img src="style/images/vegetables.jpg" alt="Recipe Name" style="width:100%"></a>
+            </div>
+            <div class='pic-hover'>
+                <h2>Crockpot Recipes!</h2>
+                    <ul>
+                        <li><a href="recipe-pages/crockpot.html#recipeone">crockpot1</a></li>
+                        <li><a href="recipe-pages/crockpot.html#recipetwo">crockpot2</a></li>
+                        <li><a href="recipe-pages/crockpot.html#recipethree">crockpot3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </hr>
+    </div>
+
+    <div class="index-recipe-block clear">
+        <hr id="veggie2">
+        <div class='container'>
+            <div class='picture'>
+                <a href="recipe-pages/crockpot.html"><img src="style/images/vegetables.jpg" alt="Recipe Name" style="width:100%"></a>
+            </div>
+            <div class='pic-hover'>
+                <h2>Crockpot Recipes!</h2>
+                    <ul>
+                        <li><a href="recipe-pages/crockpot.html#recipeone">crockpot1</a></li>
+                        <li><a href="recipe-pages/crockpot.html#recipetwo">crockpot2</a></li>
+                        <li><a href="recipe-pages/crockpot.html#recipethree">crockpot3</a></li>
                     </ul>
                 </div>
             </div>
@@ -150,7 +210,7 @@
     <hr id="aboutme">
     <div class="aboutme">  
         <h3>About Me, Ricki Dee</h3><br>
-        <img src="images/catrick.jpg" alt="Me" class="w3-image" style="display:block;margin:auto">
+        <img src="style/images/catrick.jpg" alt="Me" class="w3-image" style="display:block;margin:auto">
         <div class="w3-padding-32">
         <h5><i>I hate your "hubby" and "kiddos" so much!</i></h5>
         <div class="width"><p>I had a dream. A dream to look up a recipe on the internet and not be assaulted with 

@@ -57,7 +57,7 @@ img {
 }
 
 /* Need to consolidate into generic header div 
-Add in the other stuff from index.html as well*/
+Add in the other stuff from ../index.html as well*/
 .w3-top{
     position:fixed;
     width:100%;
