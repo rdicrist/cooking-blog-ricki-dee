@@ -2,7 +2,7 @@
 
 <!-- Sidebar -->
 <nav class="w3-sidebar w3-bar-block w3-card w3-top sidebar-text w3-animate-left" style="display:none;" id="indexSidebar">
-    <a href="javascript:void(0)" onclick="sb_close('indexSidebar')" class="w3-bar-item w3-button">Close Menu</a>
+    
     <!-- change / remove these links -->
     <a href="#jam" onclick="sb_close('indexSidebar')" class="w3-bar-item w3-button">Recipe One</a>
     <a href="#recipetwo" onclick="sb_close('indexSidebar')" class="w3-bar-item w3-button">Recipe Two</a>
@@ -10,6 +10,7 @@
     <!-- change / remove these links -->
     <a href="#aboutme" onclick="sb_close('indexSidebar')" class="w3-bar-item w3-button">About Me</a>
     <a href="<?php echo $recipePagePath; ?>jam.php" onclick="sb_close('indexSidebar')" class="w3-bar-item w3-button">Jam</a>
+    <a href="javascript:void(0)" onclick="sb_close('indexSidebar')" class="w3-bar-item w3-button">Close Menu</a>
 </nav>
 
 

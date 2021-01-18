@@ -11,3 +11,5 @@ turn recipe/tips into html/php pages and dynamically populate(?)
 use JS instead of php (look into which is better)-->
 
 - footer, stick to bottom of page from _header file
+
+- top bar over sidebar when clicked

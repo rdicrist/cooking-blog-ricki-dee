@@ -6,13 +6,14 @@
     $recipeTextPath = $basePath. 'recipes/';
     $miscPath = $basePath. 'misc-pages/';
 
-    function auto_version($file='') {
-        if (!file_exists($file)) {
-            return $file;
-        };
+    $cssPath = $basePath. 'style/css/style.css';
+    $jsPath = $basePath. 'scripts/main.js'; 
 
-        $mtime = filemtime($file);
-        return $file.'?'.$mtime;
+    // forces refresh of css and js
+    function auto_version($file='')
+    {
+        $t = time();
+        return $file. "?". $t;
     };
 ?>
 
@@ -24,14 +25,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Cooking ONLY!</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" media="screen" href="<?php echo auto_version('style/css/style.css'); ?>" />
-        <script src="<?php echo auto_version('scripts/main.js'); ?>" ></script>
+        <link rel="stylesheet" type="text/css" media="screen" href="<?php echo auto_version($cssPath); ?>" />
+        <script src="<?php echo auto_version($jsPath); ?>" ></script>
         <link rel="icon" 
           type="image/png" 
           href="<?php echo $basePath; ?>style/images/logo.png" />
     </head>
 </html>
-
-
-<!-- "< ? php echo auto_version('assets/main/css/styles.css'); ?>" -->
 

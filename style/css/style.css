@@ -69,6 +69,16 @@ Add in the other stuff from ../index.php as well*/
     background-color: #EB99B8;
 }
 
+.w3-sidebar{
+    height:100%;
+    margin-top:6%;
+    width:15%;
+    background-color:#F6CBD6;
+    position:fixed!important;
+    overflow:auto;
+    display:none;
+}
+
 .w3-white{
     color:#000!important;
     background-color:#fff!important
@@ -97,15 +107,6 @@ Add in the other stuff from ../index.php as well*/
 
 /* Need to consolidate into generic sidebar div */
 
-.w3-sidebar{
-    height:100%;
-    width:15%;
-    background-color:#F6CBD6;
-    position:fixed!important;
-    overflow:auto;
-    display:none;
-    z-index:2;
-}
 
 .sidebar-text{
     /* TODO: come back to this */
@@ -392,8 +393,10 @@ Add in the other stuff from ../index.php as well*/
 @media screen and (max-width: 810px) {
     .w3-sidebar {
         width: 50%;
+        margin-top:0%;
         height: auto; 
         position: relative;
+        z-index: 2;
     }
     .sidebar-text{
         font-size:7vw;
