@@ -1,0 +1,13 @@
+<!-- ADD IN FILE PATHS (need php for this) -->
+<!-- TODO: put in underline border for each recipe div, remove border from actual recipe 
+path variable!!!!
+fix picture links
+fix sidebar // partial // recipe pages, i think index is fine?
+h1.html is weird / wrong, need to put it into actual partial
+switch z index of w3-top, shift the sidebar menu down
+extract all inline css
+for loop w/ arrays of links/stuff
+turn recipe/tips into html/php pages and dynamically populate(?)
+use JS instead of php (look into which is better)-->
+
+- footer, stick to bottom of page from _header file
