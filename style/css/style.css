@@ -47,7 +47,9 @@ img {
 }
 
 .footer {
-    text-align: center;
+    text-align: right;
+    position: fixed;
+    bottom: 0;
 }
 
 .width {
@@ -57,7 +59,7 @@ img {
 }
 
 /* Need to consolidate into generic header div 
-Add in the other stuff from ../index.html as well*/
+Add in the other stuff from ../index.php as well*/
 .w3-top{
     position:fixed;
     width:100%;

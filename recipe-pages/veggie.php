@@ -1,19 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Cooking ONLY!</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../style/css/style.css" />
-    <script src="../scripts/main.js"></script>
-    <link rel="import" href="h1.html">
-    <link rel="icon" 
-        type="image/png" 
-        href="../style/images/logo.png" />
-</head>
-<body>
-    <!-- <?php include "./header.html" ?> -->
+<?php 
+// need to include path here, because its only loaded AFTER i get the header
+    include('/Users/rickidicristoforo/Desktop/basic websites/CookingBlog/partials/_header.php'); 
+?>
     
 
 <!-- Sidebar, FIXED 
@@ -23,7 +11,7 @@ TODO: get the header to deal with it better , get the entire page to shift to de
     <a href="#recipeone"  class="w3-bar-item w3-button">Veggie Recipe One</a>
     <a href="#recipetwo"  class="w3-bar-item w3-button">Veggie Recipe Two</a>
     <a href="#recipethree"  class="w3-bar-item w3-button">Veggie Recipe Three</a>
-    <a href="../index.html"  class="w3-bar-item w3-button">HOME</a>
+    <a href="../index.php"  class="w3-bar-item w3-button">HOME</a>
 </nav>
 
 <div class="w3-top">
@@ -69,6 +57,3 @@ TODO: get the header to deal with it better , get the entire page to shift to de
         <p>&copy; Ricki DiCristoforo 2020</p>
     </div>
 </footer>
-
-</body>
-</html>
