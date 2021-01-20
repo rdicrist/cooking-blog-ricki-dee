@@ -1,6 +1,6 @@
 <?php 
 // need to include path here, because its only loaded AFTER i get the header
-    include('/partials/_header.php'); 
+    include('partials/_header.php'); 
 
     // title, imgsource/recipesource (dont include filetype)
     $recipeInfo = [
