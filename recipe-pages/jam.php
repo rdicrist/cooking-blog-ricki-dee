@@ -1,9 +1,9 @@
 <?php 
 // need to include path here, because its only loaded AFTER i get the header
     // include('/partials/_header.php'); 
-    include('https://cooking-blog-ricki-dee.herokuapp.com/partials/_header.php');
-    include('partials/_header.php');
-    include('/../partials/_header.php');
+    // include('https://cooking-blog-ricki-dee.herokuapp.com/partials/_header.php');
+    // include('partials/_header.php');
+    // include('/partials/_header.php');
 
     // title, imgsource/recipesource (dont include filetype)
     $recipeInfo = [
@@ -15,9 +15,11 @@
 
 ?>
 
-<?php include('https://cooking-blog-ricki-dee.herokuapp.com/partials/_header.php');?>
-<?php include('partials/_header.php');?>
-<?php include('/../partials/_header.php');?>
+<?php include('../partials/_header.php');?>
+
+<!-- < ?php include('https://cooking-blog-ricki-dee.herokuapp.com/partials/_header.php');?>
+< ?php include('partials/_header.php');?>
+< ?php include('/../partials/_header.php');?> -->
 
 <!-- Sidebar (static / no close option) -->
 <nav class="w3-sidebar w3-bar-block w3-card w3-top sidebar-text" id="indexSidebar">

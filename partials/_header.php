@@ -25,12 +25,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Cooking ONLY!</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- <base href="https://cooking-blog-ricki-dee.herokuapp.com/"> -->
+        <base href="https://cooking-blog-ricki-dee.herokuapp.com/">
         <link rel="stylesheet" type="text/css" media="screen" href="<?php echo auto_version($cssPath); ?>" />
         <script src="<?php echo auto_version($jsPath); ?>" ></script>
         <link rel="icon" 
           type="image/png" 
-          href="<?php echo $basePath; ?>style/images/logo.png" />
+          href="style/images/logo.png" />
     </head>
 </html>
 
