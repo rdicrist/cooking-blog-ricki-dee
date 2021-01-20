@@ -86,11 +86,11 @@ generic css class with all the other stuff, formatted css #class just for backgr
         <div class="title"><h1>Banana Jam!</h1></div>
         <div class="recipe-row">
             <div class="recipe-picture-column">
-                <img src="<?php echo $imagePath; ?>banana.jpg" alt="Recipe Name" style="width:100%">
+                <img src="/style/images/banana.jpg" alt="Recipe Name" style="width:100%">
             </div>
             <div class="recipe-column">
                 <div class="recipe">
-                    <p><iframe src="<?php echo $recipeTextPath; ?>banana.txt" frameborder="0" height="400" width="95%"></iframe></p>
+                    <p><iframe src="/recipes/banana.txt" frameborder="0" height="400" width="95%"></iframe></p>
                 </div>  
             </div>
         </div>
