@@ -6,8 +6,8 @@
     $recipeTextPath = '/recipes/';
     $miscPath = '/misc-pages/';
 
-    $cssPath = '/CookingBlog/style/css/style.css';
-    $jsPath = '/CookingBlog/scripts/main.js'; 
+    $cssPath = '/style/css/style.css';
+    $jsPath = '/scripts/main.js'; 
 
     // forces refresh of css and js
     function auto_version($file='')
