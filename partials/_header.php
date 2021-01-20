@@ -1,13 +1,13 @@
 <?php 
 // Declare global variables, i'm including my header on every page so they will all be passed
-    $basePath = '/Desktop/basic%20websites/CookingBlog/';
-    $recipePagePath = $basePath. 'recipe-pages/';
-    $imagePath = $basePath. 'style/images/';
-    $recipeTextPath = $basePath. 'recipes/';
-    $miscPath = $basePath. 'misc-pages/';
+    // $basePath = '/Desktop/basic%20websites/CookingBlog/';
+    $recipePagePath = '/recipe-pages/';
+    $imagePath = '/style/images/';
+    $recipeTextPath = '/recipes/';
+    $miscPath = '/misc-pages/';
 
-    $cssPath = '/style/css/style.css';
-    $jsPath = '/scripts/main.js'; 
+    $cssPath = '/CookingBlog/style/css/style.css';
+    $jsPath = '/CookingBlog/scripts/main.js'; 
 
     // forces refresh of css and js
     function auto_version($file='')
