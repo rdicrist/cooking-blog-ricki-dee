@@ -11,7 +11,7 @@
 
 ?>
 
-<?php include('partials/_header.php');?>
+<?php include('/partials/_header.php');?>
 
 <!-- Sidebar (static / no close option) -->
 <nav class="w3-sidebar w3-bar-block w3-card w3-top sidebar-text" id="indexSidebar">
