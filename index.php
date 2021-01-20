@@ -24,7 +24,7 @@
         <hr id="jam">
             <div class='container'>
                 <div class='picture'>
-                    <a href="<?php echo $recipePagePath; ?>jam.php"><img src="style/images/jam.jpg" alt="Recipe Name" style="width:100%"></a>
+                    <a href="<?php echo $recipePagePath; ?>jam.php?page=Jam"><img src="style/images/jam.jpg" alt="Recipe Name" style="width:100%"></a>
                 </div>
                 <div class='pic-hover'>
                     <h2>Jam change!</h2>
