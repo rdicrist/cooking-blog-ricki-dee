@@ -1,6 +1,9 @@
 <?php 
 // need to include path here, because its only loaded AFTER i get the header
-    include('/partials/_header.php'); 
+    // include('/partials/_header.php'); 
+    include('https://cooking-blog-ricki-dee.herokuapp.com/partials/_header.php');
+    include('partials/_header.php');
+    include('/../partials/_header.php');
 
     // title, imgsource/recipesource (dont include filetype)
     $recipeInfo = [
@@ -9,15 +12,18 @@
                 ['Peach "Cin" Jam!', 'peachcin']
             ];
 
+
 ?>
 
-<?php include('/partials/_header.php');?>
+<?php include('https://cooking-blog-ricki-dee.herokuapp.com/partials/_header.php');?>
+<?php include('partials/_header.php');?>
+<?php include('/../partials/_header.php');?>
 
 <!-- Sidebar (static / no close option) -->
 <nav class="w3-sidebar w3-bar-block w3-card w3-top sidebar-text" id="indexSidebar">
     <a href="#aboutme" class="w3-bar-item w3-button">About Me</a>
     <a href="<?php echo $recipePagePath; ?>jam.php" class="w3-bar-item w3-button">Jam</a>
-    <a href="<?php echo $basePath; ?>index.php"  class="w3-bar-item w3-button">HOME</a>
+    <a href="/index.php"  class="w3-bar-item w3-button">HOME</a>
 </nav>
 
 <div class="w3-top">
