@@ -8,7 +8,7 @@
 <div class="w3-top">
     <div class="w3-xlarge header">
         <ul>
-            <li style="float:left;padding:15px;">My Jams, By Ricki Dee</li>
+            <li style="float:left;padding:15px;">My <?php echo $name; ?>s, By Ricki Dee</li>
         </ul>
     </div>
 </div>

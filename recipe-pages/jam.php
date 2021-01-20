@@ -7,9 +7,6 @@
             ];
 
     $name = $_GET['page'];
-    echo 'this page is called'. $name;
-
-
 ?>
 
 <?php include('../partials/_header.php');?>
