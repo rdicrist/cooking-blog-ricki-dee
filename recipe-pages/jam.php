@@ -2,21 +2,51 @@
 // need to include path here, because its only loaded AFTER i get the header
     include('/Users/rickidicristoforo/Desktop/basic websites/CookingBlog/partials/_header.php'); 
 
+    // title, imgsource/recipesource (dont include filetype)
+    $recipeInfo = [
+                ['Raspberry Lime Jam!', 'rasplime'],
+                ['Banana Jam!', 'banana'],
+                ['Peach "Cin" Jam!', 'peachcin']
+            ];
+
 ?>
 
+<!-- Sidebar (static / no close option) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top sidebar-text" id="indexSidebar">
+    <a href="#aboutme" class="w3-bar-item w3-button">About Me</a>
+    <a href="<?php echo $recipePagePath; ?>jam.php" class="w3-bar-item w3-button">Jam</a>
+    <a href="<?php echo $basePath; ?>index.php"  class="w3-bar-item w3-button">HOME</a>
+</nav>
 
-<!-- Sidebar, FIXED 
-TODO: get the header to deal with it better , get the entire page to shift to deal with it 
-get sidebar words to shrink with size changes
-image as background instead of next to it-->
-<div class="sidebar-standard">
-    <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left recipe-sidebar" id="mySidebar">
-        <a href="#recipeone"  class="w3-bar-item w3-button">Jam Recipe One</a>
-        <a href="#recipetwo"  class="w3-bar-item w3-button">Jam Recipe Two</a>
-        <a href="#recipethree"  class="w3-bar-item w3-button">Jam Recipe Three</a>
-        <a href="<?php echo $basePath; ?>index.php"  class="w3-bar-item w3-button">HOME</a>
-    </nav>
+<div class="w3-top">
+    <div class="w3-xlarge header">
+        <ul>
+            <li style="float:left;padding:15px;">My Jams, By Ricki Dee</li>
+        </ul>
+    </div>
 </div>
+
+<style>
+    #recipeone {
+        background: url("<?php echo $imagePath; ?>rasplime.jpg") repeat;
+        border: 2px solid black;
+    }
+
+    .inner-box {
+        margin: 30px;
+        background-color: #ffffff;
+        border: 1px solid black;
+        opacity: 0.6;
+    }
+
+    .inner-box p {
+        margin: 5%;
+        font-weight: bold;
+        color: #000000;
+    }
+</style>
+
+<!-- < ?php for ()?> -->
 
 <div class="sidebar-mobile" id="mobileSidebar">
     <ul>
@@ -35,55 +65,49 @@ image as background instead of next to it-->
 <!-- Recipe Blocks -->
 <div class="recipe-block"> <!-- Account for sidebar -->
 
-<hr id="recipeone">
-    <div class="title"><h1>Raspberry Lime Jam!</h1></div>
-    <div class="recipe-row">
-        <div class="recipe-picture-column">
-            <img src="<?php echo $imagePath; ?>rasplime.jpg" alt="Recipe Name">
-        </div>
-        <div class="recipe-column">
-            <div class="recipe">
-                <p><iframe src="<?php echo $recipeTextPath; ?>raspberrylime.txt" frameborder="0" height="400" width="95%"></iframe></p>
-            </div>  
+<!-- need to make div id (both) / h1 / iframe src dynamic, just repeat using for loop 
+same class for all though, can use the same css
+wait no, need different img tages
+dynamic css?
+need better css here
+seperate css page just for the img
+can i have a css function ?
+generic css class with all the other stuff, formatted css #class just for background img ?-->
+    <div id="recipeone">
+        <div class="inner-box">
+            <div class="title"><h1>Raspberry Lime Jam!</h1></div>
+            <p><iframe src="<?php echo $recipeTextPath; ?>rasplime.txt" frameborder="0" height="400" width="95%"></iframe></p>
         </div>
     </div>
-</hr>
 
-<hr id="recipetwo">
-    <div class="title"><h1>Banana Jam!</h1></div>
-    <div class="recipe-row">
-        <div class="recipe-picture-column">
-            <img src="<?php echo $imagePath; ?>banana.jpg" alt="Recipe Name" style="width:100%">
+    <hr id="recipetwo">
+        <div class="title"><h1>Banana Jam!</h1></div>
+        <div class="recipe-row">
+            <div class="recipe-picture-column">
+                <img src="<?php echo $imagePath; ?>banana.jpg" alt="Recipe Name" style="width:100%">
+            </div>
+            <div class="recipe-column">
+                <div class="recipe">
+                    <p><iframe src="<?php echo $recipeTextPath; ?>banana.txt" frameborder="0" height="400" width="95%"></iframe></p>
+                </div>  
+            </div>
         </div>
-        <div class="recipe-column">
-            <div class="recipe">
-                <p><iframe src="<?php echo $recipeTextPath; ?>banana.txt" frameborder="0" height="400" width="95%"></iframe></p>
-            </div>  
-        </div>
-    </div>
-</hr>
+    </hr>
 
-<hr id="recipethree">
-    <div class="title"><h1>Peach "Cin" Jam!</h1></div>
-    <a href="<?php echo $miscPath; ?>tips.php#tipthree">Click here for info on peeling the peaches!</a>
-    <div class="recipe-row">
-        <div class="recipe-picture-column">
-            <img src="<?php echo $imagePath; ?>peachcin.jpeg" alt="Recipe Name" style="width:100%">
+    <hr id="recipethree">
+        <div class="title"><h1>Peach "Cin" Jam!</h1></div>
+        <a href="<?php echo $miscPath; ?>tips.php#tipthree">Click here for info on peeling the peaches!</a>
+        <div class="recipe-row">
+            <div class="recipe-picture-column">
+                <img src="<?php echo $imagePath; ?>peachcin.jpeg" alt="Recipe Name" style="width:100%">
+            </div>
+            <div class="recipe-column">
+                <div class="recipe">
+                    <p><iframe src="<?php echo $recipeTextPath; ?>peachcin.txt" frameborder="0" height="400" width="95%"></iframe></p>
+                </div>  
+            </div>
         </div>
-        <div class="recipe-column">
-            <div class="recipe">
-                <p><iframe src="<?php echo $recipeTextPath; ?>peachcin.txt" frameborder="0" height="400" width="95%"></iframe></p>
-            </div>  
-        </div>
-    </div>
-</hr>
+    </hr>
 </div> <!-- for width-->
 
-<footer>
-    <div class="footer">
-        <p>&copy; Ricki DiCristoforo 2020</p>
-    </div>
-</footer>
-
-<!-- </body>
-</html> -->
+<?php include('/Users/rickidicristoforo/Desktop/basic websites/CookingBlog/partials/_footer.php');?>

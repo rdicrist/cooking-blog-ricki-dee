@@ -48,7 +48,6 @@ img {
 
 .footer {
     text-align: right;
-    position: fixed;
     bottom: 0;
 }
 
@@ -72,7 +71,7 @@ Add in the other stuff from ../index.php as well*/
 .w3-sidebar{
     height:100%;
     margin-top:6%;
-    width:15%;
+    width:20%;
     background-color:#F6CBD6;
     position:fixed!important;
     overflow:auto;
@@ -125,6 +124,7 @@ Add in the other stuff from ../index.php as well*/
 
 .recipe-block {
     margin-left:25%;
+    margin-top:8%;
 }
 
 

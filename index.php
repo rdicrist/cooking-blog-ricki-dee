@@ -2,12 +2,6 @@
 
 <!-- Sidebar -->
 <nav class="w3-sidebar w3-bar-block w3-card w3-top sidebar-text w3-animate-left" style="display:none;" id="indexSidebar">
-    
-    <!-- change / remove these links -->
-    <a href="#jam" onclick="sb_close('indexSidebar')" class="w3-bar-item w3-button">Recipe One</a>
-    <a href="#recipetwo" onclick="sb_close('indexSidebar')" class="w3-bar-item w3-button">Recipe Two</a>
-    <a href="#recipethree" onclick="sb_close('indexSidebar')" class="w3-bar-item w3-button">Recipe Three</a>
-    <!-- change / remove these links -->
     <a href="#aboutme" onclick="sb_close('indexSidebar')" class="w3-bar-item w3-button">About Me</a>
     <a href="<?php echo $recipePagePath; ?>jam.php" onclick="sb_close('indexSidebar')" class="w3-bar-item w3-button">Jam</a>
     <a href="javascript:void(0)" onclick="sb_close('indexSidebar')" class="w3-bar-item w3-button">Close Menu</a>
@@ -18,13 +12,13 @@
 <div class="w3-top">
     <div class="w3-xlarge header">
         <ul>
-            <li style="float:left;"><div class="head-button" onclick="sb_open('indexSidebar')">☰</div></li>
+            <li style="float:left;"><div class="head-button" onclick="sb_opposite('indexSidebar')">☰</div></li>
             <li style="float:left;padding:15px;">My Food, By Ricki Dee</li>
         </ul>
     </div>
 </div>
 
-<div class="index-box">
+<div class="index-box ">
     <!-- coulmn one -->
     <div class="index-recipe-block clear">
         <hr id="jam">
