@@ -97,11 +97,11 @@ Add in the other stuff from ../index.php as well*/
 }
 
 .w3-center{
-    text-align:center!important
+    text-align:center!important;
 }
 
 .w3-right{
-    float:right!important
+    float:right!important;
 }
 
 /* Need to consolidate into generic sidebar div */
