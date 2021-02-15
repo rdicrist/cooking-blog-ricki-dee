@@ -6,27 +6,10 @@
                 ['Peach "Cin" Jam!', 'peachcin']
             ];
 
+    // echo json_encode($recipeInfo);
+
     $name = $_GET['page'];
 ?>
-
-<?php include('../partials/_header.php');?>
-<?php include('../partials/recipe-pages-menus.php');?>
-
-<!-- Sidebar (static / no close option) -->
-<!-- <nav class="w3-sidebar w3-bar-block w3-card w3-top sidebar-text" id="indexSidebar">
-    <a href="#aboutme" class="w3-bar-item w3-button">About Me</a>
-    <a href="< ?php echo $recipePagePath; ?>jam.php" class="w3-bar-item w3-button">Jam</a>
-    <a href="/index.php"  class="w3-bar-item w3-button">HOME</a>
-</nav>
-
-<div class="w3-top">
-    <div class="w3-xlarge header">
-        <ul>
-            <li style="float:left;padding:15px;">My Jams, By Ricki Dee</li>
-        </ul>
-    </div>
-</div> -->
-
 <style>
     #recipeone {
         background: url("<?php echo $imagePath; ?>rasplime.jpg") repeat;
@@ -47,8 +30,11 @@
     }
 </style>
 
-<!-- < ?php for ()?> -->
+<?php include('../partials/_header.php');?>
 
+<?php include('../partials/recipe-pages-menus.php');?>
+
+<!-- TODO: fix mobile sidebar -->
 <div class="sidebar-mobile" id="mobileSidebar">
     <ul>
         <li><a href="../index.php">HOME</a></li>
@@ -63,52 +49,25 @@
     </ul>
 </div>
 
+<!-- put into recipepage partial, reference vars defined in file (same name) -->
 <!-- Recipe Blocks -->
-<div class="recipe-block"> <!-- Account for sidebar -->
+<div class="recipe-block">
 
-<!-- need to make div id (both) / h1 / iframe src dynamic, just repeat using for loop 
-same class for all though, can use the same css
-wait no, need different img tages
-dynamic css?
-need better css here
-seperate css page just for the img
-can i have a css function ?
-generic css class with all the other stuff, formatted css #class just for background img ?-->
-    <div id="recipeone">
-        <div class="inner-box">
-            <div class="title"><h1>Raspberry Lime Jam!</h1></div>
-            <p><iframe src="<?php echo $recipeTextPath; ?>rasplime.txt" frameborder="0" height="400" width="95%"></iframe></p>
-        </div>
-    </div>
-
-    <hr id="recipetwo">
-        <div class="title"><h1>Banana Jam!</h1></div>
-        <div class="recipe-row">
-            <div class="recipe-picture-column">
-                <img src="/style/images/banana.jpg" alt="Recipe Name" style="width:100%">
-            </div>
-            <div class="recipe-column">
-                <div class="recipe">
-                    <p><iframe src="/recipes/banana.txt" frameborder="0" height="400" width="95%"></iframe></p>
-                </div>  
+    <?php foreach ($recipeInfo as $recipe): ?>
+        <div class="recipe" style="background: url('<?php echo $imagePath. $recipe[1] ?>.jpg') repeat;">
+            <div class="inner-box">
+                <div class="title"><h1><?php echo $recipe[0]; ?></h1></div>
+                <p><iframe src="<?php echo $recipeTextPath. $recipe[1] ?>.txt" frameborder="0" height="400" width="95%"></iframe></p>
             </div>
         </div>
-    </hr>
+    <?php endforeach; ?>
 
-    <hr id="recipethree">
-        <div class="title"><h1>Peach "Cin" Jam!</h1></div>
-        <a href="<?php echo $miscPath; ?>tips.php#tipthree">Click here for info on peeling the peaches!</a>
-        <div class="recipe-row">
-            <div class="recipe-picture-column">
-                <img src="<?php echo $imagePath; ?>peachcin.jpeg" alt="Recipe Name" style="width:100%">
-            </div>
-            <div class="recipe-column">
-                <div class="recipe">
-                    <p><iframe src="<?php echo $recipeTextPath; ?>peachcin.txt" frameborder="0" height="400" width="95%"></iframe></p>
-                </div>  
-            </div>
-        </div>
-    </hr>
-</div> <!-- for width-->
+    <a href="< ?php echo $miscPath; ?>tips.php#tipthree">Click here for info on peeling the peaches!</a> 
+    <!-- put above inside peachcin file -->
+    
+    <?php include('../partials/_footer.php');?>
+    
+   
+ </div> <!-- end recipe blocks  -->
 
-<?php include('/Users/rickidicristoforo/Desktop/basic websites/CookingBlog/partials/_footer.php');?>
+

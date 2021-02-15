@@ -70,8 +70,11 @@ Add in the other stuff from ../index.php as well*/
 
 .w3-sidebar{
     height:100%;
-    margin-top:6%;
-    width:20%;
+    width:15%;
+    top: 0;
+    left: 0;
+    margin-top: 58px;
+
     background-color:#F6CBD6;
     position:fixed!important;
     overflow:auto;
@@ -123,8 +126,10 @@ Add in the other stuff from ../index.php as well*/
 }
 
 .recipe-block {
-    margin-left:25%;
-    margin-top:8%;
+    margin-top:58px;
+    margin-left: 15px;
+    width: 85%;
+    float: right;
 }
 
 
@@ -133,7 +138,7 @@ Add in the other stuff from ../index.php as well*/
     /* width:100%;
     min-width:100%; */
     text-align:right;
-    padding:8px 16px;
+    /* padding:8px 16px; */
     display:block;
     border:none;
     white-space:normal;
@@ -152,9 +157,6 @@ Add in the other stuff from ../index.php as well*/
     top:0;
 } */
 
-.w3-xlarge{
-    font-size:24px!important
-}
 
 .w3-animate-left{
     position:relative;
