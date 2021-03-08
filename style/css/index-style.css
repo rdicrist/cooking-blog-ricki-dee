@@ -12,6 +12,11 @@
     object-fit:scale-down;
 }
 
+.index-block {
+    margin: 10px;
+    object-fit:scale-down;
+}
+
 .container {
     position: relative;
     text-align: center;
