@@ -25,6 +25,18 @@ img {
     padding: 10px;
 }
 
+.text-link-button {
+    text-decoration:none;
+    color:white;
+    background-color:inherit;
+    cursor:pointer;
+    text-align:center;
+}
+
+.text-link-button:hover {
+    background-color:#E36383!important;
+}
+
 /* .recipe p {
     font: arial;
     font-size: 14px;

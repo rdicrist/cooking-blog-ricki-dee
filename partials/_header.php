@@ -8,6 +8,7 @@
 
     $cssPath = 'style/css/style.css';
     $indexCssPath = 'style/css/index-style.css';
+    $headerCssPath = 'style/css/header-all-style.css';
     $jsPath = 'scripts/main.js'; 
 
     // forces refresh of css and js
@@ -18,6 +19,7 @@
     };
 
     // NOTE: if i want this file to be pushed, need to do git update-index --no-assume-unchanged partials/_header.php
+    // back to not tracking: git update-index --assume-unchanged partials/_header.php
 ?>
 
 
@@ -32,7 +34,8 @@
         <!-- <base href="/Desktop/basic%20websites/CookingBlog/"> -->
         <link rel="stylesheet" type="text/css" media="screen" href="<?php echo auto_version($cssPath); ?>" />
 
-        <link rel="stylesheet" type="text/css" media="screen" href="<?php echo auto_version($indexCssPath); ?>" />        
+        <link rel="stylesheet" type="text/css" media="screen" href="<?php echo auto_version($indexCssPath); ?>" /> 
+        <link rel="stylesheet" type="text/css" media="screen" href="<?php echo auto_version($headerCssPath); ?>" />       
 
         <script src="<?php echo auto_version($jsPath); ?>" ></script>
         <link rel="icon" 

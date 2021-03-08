@@ -94,29 +94,30 @@
     display: inline;
 } */
 
-        .header-top {
-            position:fixed;
-            width:100%;
-            z-index:1;
-            top:0;
-            left: 0;
-            background-color: #EB99B8;
-        }
+.w3-sidebar {
+}
 
-        .header-top-text {
-            font-size:24px!important
-        }
+.w3-bar-block {
 
-        .header ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
+} 
 
-        }
+.w3-card {
+    
+} 
 
-        header li {
-            display: inline;
-        }
+.w3-top {
+
+} 
+
+.sidebar-text {
+
+} 
+
+.w3-animate-left {
+
+}
+
+        
 
 
 </style>
