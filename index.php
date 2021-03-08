@@ -2,7 +2,7 @@
 
     $indexBlocks =
     [
-        ['Jam Recipes', 'Jam'],
+        ['Jam Recipes', 'jam'],
         ['Dessert Recipes', 'desserts'],
         ['Vegetarian', 'vegetables']
     ];
