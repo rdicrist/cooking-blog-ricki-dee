@@ -58,24 +58,24 @@
     .index-recipe-block {
 
         flex: none;
-        margin: none;
-        width: 50%;
-        height: 75%;
+        margin: 30px;
+        width: 95%;
+        height: 100%;
         object-fit: scale-down;
-        float: right;
+        float: left;
 
     }
 
     .container {
         text-align: center;
-        width: 100%;
+        /* width: 100%; */
 
     }
 
     .container img {
-        flex: 1 1 30%;
-        width:  20vw;
-        height: 20vw;
+        flex: none;
+        width:  95%;
+        height: 95%;
         object-fit:scale-down;
         color: #2E294E;
         opacity: 0.4;

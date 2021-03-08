@@ -57,16 +57,7 @@ img {
     text-align: center;
 }
 
-/* Need to consolidate into generic header div 
-Add in the other stuff from ../index.php as well*/
-.w3-top{
-    position:fixed;
-    width:100%;
-    z-index:1;
-    top:0;
-    left: 0;
-    background-color: #EB99B8;
-}
+
 
 .w3-sidebar{
     height:100%;
@@ -86,9 +77,7 @@ Add in the other stuff from ../index.php as well*/
     background-color:#fff!important
 }
 
-.w3-xlarge{
-    font-size:24px!important
-}
+
 
 .w3-padding-16{
     padding-top:16px!important;
@@ -203,21 +192,7 @@ Add in the other stuff from ../index.php as well*/
     background-color:#ccc!important;
 }
 
-/* my own header */
 
-/* .header {
-    background-color: #ECBAE4;
-} */
-
-.header ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.header li {
-    display: inline;
-}
 
 .head-button{
     float:left;

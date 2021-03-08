@@ -19,15 +19,15 @@
 </nav>
 
 
-
-<div class="w3-top">
-    <div class="w3-xlarge header">
+<div class="header-top">
+    <div class="header-top-text header">
         <ul>
             <li style="float:left;"><div class="head-button" onclick="sb_opposite('indexSidebar')">☰</div></li>
             <li style="float:left;padding:15px;">My Food, By Ricki Dee</li>
         </ul>
     </div>
 </div>
+
 
 <div class="index-box ">
     
@@ -61,3 +61,62 @@
     </div>
 
 </div>
+
+
+<style>
+/* .w3-top{
+    position:fixed;
+    width:100%;
+    z-index:1;
+    top:0;
+    left: 0;
+    background-color: #EB99B8;
+}
+
+
+.w3-xlarge{
+    font-size:24px!important
+} */
+
+/* my own header */
+
+/* .header {
+    background-color: #ECBAE4;
+} */
+
+/* .header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header li {
+    display: inline;
+} */
+
+        .header-top {
+            position:fixed;
+            width:100%;
+            z-index:1;
+            top:0;
+            left: 0;
+            background-color: #EB99B8;
+        }
+
+        .header-top-text {
+            font-size:24px!important
+        }
+
+        .header ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        header li {
+            display: inline;
+        }
+
+
+</style>
