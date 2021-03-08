@@ -7,7 +7,8 @@
     $miscPath = 'misc-pages/';
 
     $cssPath = 'style/css/style.css';
-    $jsPath = '/scripts/main.js'; 
+    $indexCssPath = 'style/css/index-style.css';
+    $jsPath = 'scripts/main.js'; 
 
     // forces refresh of css and js
     function auto_version($file='')
@@ -15,6 +16,8 @@
         $t = time();
         return $file. "?". $t;
     };
+
+    // NOTE: if i want this file to be pushed, need to do git update-index --no-assume-unchanged partials/_header.php
 ?>
 
 
@@ -26,7 +29,11 @@
         <title>Cooking ONLY!</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <base href="https://cooking-blog-ricki-dee.herokuapp.com/">
+        <!-- <base href="/Desktop/basic%20websites/CookingBlog/"> -->
         <link rel="stylesheet" type="text/css" media="screen" href="<?php echo auto_version($cssPath); ?>" />
+
+        <link rel="stylesheet" type="text/css" media="screen" href="<?php echo auto_version($indexCssPath); ?>" />        
+
         <script src="<?php echo auto_version($jsPath); ?>" ></script>
         <link rel="icon" 
           type="image/png" 
