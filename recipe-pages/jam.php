@@ -6,8 +6,6 @@
                 ['Peach "Cin" Jam!', 'peachcin']
             ];
 
-    // echo json_encode($recipeInfo);
-
     $name = $_GET['page'];
 ?>
 <style>
@@ -34,11 +32,6 @@
 
 <?php include('../partials/recipe-pages-menus.php');?>
 
-<!-- 
-i Dee
-Warning: include(recipes/banana.txt): failed to open stream: No such file or directory in /Users/rickidicristoforo/Desktop/basic websites/CookingBlog/recipe-pages/jam.php on line 37
-
-Warning: include(): Failed opening 'recipes/banana.txt' for inclusion (include_path='.:') in /Users/rickidicristoforo/Desktop/basic websites/CookingBlog/recipe-pages/jam.php on line 37 -->
 
 <!-- TODO: fix mobile sidebar -->
 <div class="sidebar-mobile" id="mobileSidebar">
@@ -63,7 +56,7 @@ Warning: include(): Failed opening 'recipes/banana.txt' for inclusion (include_p
         <div class="recipe" style="background: url('<?php echo $imagePath. $recipe[1] ?>.jpg') repeat;">
             <div class="inner-box">
                 <div class="title"><h1><?php echo $recipe[0]; ?></h1></div>
-                <p><iframe src="<?php echo $recipeTextPath. $recipe[1] ?>.html" frameborder="0" height="400" width="95%"></iframe></p>
+                <p><iframe src="<?php echo $recipeTextPath; ?>index.php?recipe=<?php echo $recipe[1]; ?>" frameborder="0" height="400" width="95%"></iframe></p>
                 <!-- <p><iframe src="< ?php echo $recipeTextPath; ?>banana.html" frameborder="0" height="400" width="95%"></iframe></p> -->
             </div>
         </div>

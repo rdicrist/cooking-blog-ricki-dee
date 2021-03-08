@@ -13,3 +13,132 @@ use JS instead of php (look into which is better)-->
 - footer, stick to bottom of page from _header file
 
 - top bar over sidebar when clicked
+
+    <div class="index-recipe-block clear">
+        <hr id="crockpot">
+        <div class='container'>
+            <div class='picture'>
+                <a href="<?php echo $recipePagePath; ?>crockpot.php"><img src="style/images/crockpot.jpg" alt="Recipe Name" style="width:100%"></a>
+            </div>
+            <div class='pic-hover'>
+                <h2>Crockpot Recipes!</h2>
+                    <ul>
+                        <li><a href="<?php echo $recipePagePath; ?>crockpot.php#recipeone">crockpot1</a></li>
+                        <li><a href="<?php echo $recipePagePath; ?>crockpot.php#recipetwo">crockpot2</a></li>
+                        <li><a href="<?php echo $recipePagePath; ?>crockpot.php#recipethree">crockpot3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </hr>
+    </div>
+
+    <div class="index-recipe-block clear">
+        <hr id="dessert">
+        <div class='container'>
+            <div class='picture'>
+                <a href="<?php echo $recipePagePath; ?>crockpot.php"><img src="style/images/desserts.jpg" alt="Recipe Name" style="width:100%"></a>
+            </div>
+            <div class='pic-hover'>
+                <h2>Dessert Recipes!</h2>
+                    <ul>
+                        <li><a href="<?php echo $recipePagePath; ?>crockpot.php#recipeone">dessert1</a></li>
+                        <li><a href="<?php echo $recipePagePath; ?>crockpot.php#recipetwo">dessert2</a></li>
+                        <li><a href="<?php echo $recipePagePath; ?>crockpot.php#recipethree">dessert3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </hr>
+    </div>
+
+    <!-- column two -->
+    <div class="index-recipe-block clear">
+        <!-- Recipe blocks -->
+        <hr id="veggie">
+        <div class='container'>
+            <div class='picture'>
+                <a href="<?php echo $recipePagePath; ?>crockpot.php"><img src="style/images/vegetables.jpg" alt="Recipe Name" style="width:100%"></a>
+            </div>
+            <div class='pic-hover'>
+                <h2>Veggie Recipes!</h2>
+                    <ul>
+                        <li><a href="<?php echo $recipePagePath; ?>veggie.php#recipeone">veggie1</a></li>
+                        <li><a href="<?php echo $recipePagePath; ?>veggie.php#recipetwo">veggie2</a></li>
+                        <li><a href="<?php echo $recipePagePath; ?>veggie.php#recipethree">veggie3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </hr>
+    </div>
+
+    <div class="index-recipe-block clear">
+        <hr id="veggie2">
+        <div class='container'>
+            <div class='picture'>
+                <a href="<?php echo $recipePagePath; ?>crockpot.php"><img src="style/images/vegetables.jpg" alt="Recipe Name" style="width:100%"></a>
+            </div>
+            <div class='pic-hover'>
+                <h2>Crockpot Recipes!</h2>
+                    <ul>
+                        <li><a href="<?php echo $recipePagePath; ?>crockpot.php#recipeone">crockpot1</a></li>
+                        <li><a href="<?php echo $recipePagePath; ?>crockpot.php#recipetwo">crockpot2</a></li>
+                        <li><a href="<?php echo $recipePagePath; ?>crockpot.php#recipethree">crockpot3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </hr>
+    </div>
+
+    <div class="index-recipe-block clear">
+        <hr id="veggie2">
+        <div class='container'>
+            <div class='picture'>
+                <a href="<?php echo $recipePagePath; ?>crockpot.php"><img src="style/images/vegetables.jpg" alt="Recipe Name" style="width:100%"></a>
+            </div>
+            <div class='pic-hover'>
+                <h2>Crockpot Recipes!</h2>
+                    <ul>
+                        <li><a href="<?php echo $recipePagePath; ?>crockpot.php#recipeone">crockpot1</a></li>
+                        <li><a href="<?php echo $recipePagePath; ?>crockpot.php#recipetwo">crockpot2</a></li>
+                        <li><a href="<?php echo $recipePagePath; ?>crockpot.php#recipethree">crockpot3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </hr>
+    </div>
+
+    <div class="index-recipe-block clear">
+        <hr id="veggie2">
+        <div class='container'>
+            <div class='picture'>
+                <a href="<?php echo $recipePagePath; ?>crockpot.php"><img src="style/images/vegetables.jpg" alt="Recipe Name" style="width:100%"></a>
+            </div>
+            <div class='pic-hover'>
+                <h2>Crockpot Recipes!</h2>
+                    <ul>
+                        <li><a href="<?php echo $recipePagePath; ?>crockpot.php#recipeone">crockpot1</a></li>
+                        <li><a href="<?php echo $recipePagePath; ?>crockpot.php#recipetwo">crockpot2</a></li>
+                        <li><a href="<?php echo $recipePagePath; ?>crockpot.php#recipethree">crockpot3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </hr>
+    </div>
+
+    <div class="index-recipe-block clear">
+        <hr id="veggie2">
+        <div class='container'>
+            <div class='picture'>
+                <a href="<?php echo $recipePagePath; ?>crockpot.php"><img src="style/images/vegetables.jpg" alt="Recipe Name" style="width:100%"></a>
+            </div>
+            <div class='pic-hover'>
+                <h2>Crockpot Recipes!</h2>
+                    <ul>
+                        <li><a href="<?php echo $recipePagePath; ?>crockpot.php#recipeone">crockpot1</a></li>
+                        <li><a href="<?php echo $recipePagePath; ?>crockpot.php#recipetwo">crockpot2</a></li>
+                        <li><a href="<?php echo $recipePagePath; ?>crockpot.php#recipethree">crockpot3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </hr>
+    </div>
+

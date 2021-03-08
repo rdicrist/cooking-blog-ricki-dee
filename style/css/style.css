@@ -247,32 +247,6 @@ Add in the other stuff from ../index.php as well*/
     background-color:#ccc!important;
 }
 
-
-/* makes text appear when hover */
-
-.container {
-    position: relative;
-    text-align: center;
-  }
-  
-  .pic-hover {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center; 
-  }
-  
-  .container:hover .picture {
-    opacity: 0.3;
-  }
-  
-  .container:hover .pic-hover {
-    opacity: 1;
-  }
   
   .text {
     color: #2B3927;
@@ -295,37 +269,7 @@ Add in the other stuff from ../index.php as well*/
     }
 }*/
 
-  /* the image grid on index*/
-  .index-box {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 30px;
-  }
 
-  .index-recipe-block {
-    flex: 1 1 30%;
-    margin: 10px;
-    /* float: left; */
-    width:  20vw;
-    height: 20vw;
-    /* width:  30%;
-    height: 30%; */
-    object-fit:scale-down;
-  }
-
-  .index-recipe-block img {
-      flex: 1 1 30%;
-      /* margin: 5px; */
-      /* float: left; */
-      /* width:  150em;
-      height: 150em; */
-      width:  20vw;
-      height: 20vw;
-      /* width:  30%;
-      height: 30%; */
-      object-fit:scale-down;
-      /* object-fit: cover; */
-  }
   
   /* Create four equal columns that sits next to each other */
   /* .column {
@@ -359,33 +303,7 @@ Add in the other stuff from ../index.php as well*/
     padding: 5px; 
   }
 
-  @media screen and (max-width: 800px) {
-    .recipe-row {
-        display: block;
-        /* flex-direction: column;
-        align-items: center; */
-    }
-    .index-box {
-        flex-direction: column;
-        align-items: center;
-        /* padding: 0px; */
-    }
 
-    .index-recipe-block {
-        width: 100%;
-        margin: 0px;
-        padding: 3px; 
-        flex: 100%;
-        max-width: 100%;
-    }
-
-    .index-recipe-block img{
-        width: 100%;  
-        height: 100%;
-    }
-
-
-  }
 
 /* doesn't display sidebar at all */
 .sidebar-mobile {
@@ -480,3 +398,48 @@ Add in the other stuff from ../index.php as well*/
   .jam-dropdown:hover .jam-dropdown-content {
     display: block;
   }
+
+
+/* RECIPE FILES  */
+.actual-recipe-container .border {
+    border: 2px solid red;
+}
+.actual-recipe-container .ingredients {
+    
+    position: fixed;
+    width: 40%;
+    height: 95%;
+    font-size:2vw;
+}
+.actual-recipe-container .instructions {
+    /* position: relative; */
+    /* display: block; */
+    
+
+    width: 55%;
+    float: right;
+    /* box-sizing: border-box; */
+}
+
+
+/* RECIPE FILES  */
+/* .actual-recipe-container .border {
+    border: 2px solid red;
+}
+.actual-recipe-container .ingredients {
+    
+    position: fixed;
+    width: 40%;
+    height: 95%;
+    font-size:2vw;
+}
+.actual-recipe-container .instructions {
+    /* position: relative; 
+    display: block;
+
+    width: 55%;
+    float: right;
+    /* box-sizing: border-box; 
+} */
+
+ 

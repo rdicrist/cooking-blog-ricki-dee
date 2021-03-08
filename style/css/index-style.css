@@ -1,0 +1,94 @@
+.index-box {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.index-recipe-block {
+    flex: 1 1 30%;
+    margin: 10px;
+    width:  20vw;
+    height: 20vw;
+    object-fit:scale-down;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.container img {
+      flex: 1 1 30%;
+      width:  20vw;
+      height: 20vw;
+      object-fit:scale-down;
+}
+
+.container .pic-hover {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center; 
+}
+
+.container:hover img {
+    opacity: 0.3;
+}
+  
+.container:hover .pic-hover {
+    opacity: 1;
+}
+  
+@media screen and (max-width: 800px) {
+    .index-box {
+        display: block;
+        flex-wrap: none;
+        padding: none;
+    }
+
+    .index-recipe-block {
+
+        flex: none;
+        margin: none;
+        width: 50%;
+        height: 75%;
+        object-fit: scale-down;
+        float: right;
+
+    }
+
+    .container {
+        text-align: center;
+        width: 100%;
+
+    }
+
+    .container img {
+        flex: 1 1 30%;
+        width:  20vw;
+        height: 20vw;
+        object-fit:scale-down;
+        color: #2E294E;
+        opacity: 0.4;
+
+    }
+
+    .container .pic-hover {
+        transition: none;
+        opacity: 1;
+        position: absolute;
+    }
+
+    .container:hover .picture {
+        opacity: 1;
+        color: #2E294E; 
+    }
+  
+    .container:hover .pic-hover {
+        opacity: 1;
+    } 
+}
