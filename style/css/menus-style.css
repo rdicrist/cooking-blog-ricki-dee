@@ -23,6 +23,19 @@ header li {
     display: inline;
 }
 
+.header-item {
+    float:left; 
+    padding: 15px;
+    
+}
+
+.header-home-item {
+    width:15%; 
+    padding: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 /* sidebar */
 .standard-sidebar {
 

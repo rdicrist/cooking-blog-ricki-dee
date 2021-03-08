@@ -11,25 +11,31 @@
     
 ?>
 
+<nav class="standard-sidebar sidebar-block shadow sidebar-text w3-animate-left" style="display:none;" id="indexSidebar">
+    <a href="#aboutme" onclick="sb_close('indexSidebar', 'indexBox')" class="text-link-button sidebar-item">About Me</a>
+    <a href="<?php echo $recipePagePath; ?>jam.php" onclick="sb_close('indexSidebar', 'indexBox')" class="text-link-button sidebar-item ">Jam</a>
+    <a href="javascript:void(0)" onclick="sb_close('indexSidebar', 'indexBox')" class="text-link-button sidebar-item">Close Menu</a>
+</nav> 
+
 <!-- Sidebar -->
-<nav class="w3-sidebar w3-bar-block w3-card w3-top sidebar-text w3-animate-left" style="display:none;" id="indexSidebar">
+<!-- <nav class="w3-sidebar w3-bar-block w3-card w3-top sidebar-text w3-animate-left" style="display:none;" id="indexSidebar">
     <a href="#aboutme" onclick="sb_close('indexSidebar')" class="w3-bar-item w3-button">About Me</a>
     <a href="<?php echo $recipePagePath; ?>jam.php" onclick="sb_close('indexSidebar')" class="w3-bar-item w3-button">Jam</a>
     <a href="javascript:void(0)" onclick="sb_close('indexSidebar')" class="w3-bar-item w3-button">Close Menu</a>
-</nav>
+</nav> -->
 
 
 <div class="header-top">
     <div class="header-top-text header">
         <ul>
-            <li style="float:left;"><div class="head-button" onclick="sb_opposite('indexSidebar')">☰</div></li>
+            <li style="float:left;"><div class="head-button" onclick="sb_opposite('indexSidebar', 'indexBox')">☰</div></li>
             <li style="float:left;padding:15px;">My Food, By Ricki Dee</li>
         </ul>
     </div>
 </div>
 
 
-<div class="index-box ">
+<div class="index-box" id="indexBox">
     
     <?php foreach ($indexBlocks as $block): ?>
         <div class="index-recipe-block clear">

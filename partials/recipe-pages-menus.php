@@ -1,8 +1,8 @@
 <div class="header-top">
     <div class="header-top-text header">
         <ul>
-            <li><a class="text-link-button text-white" style="float:left; padding:15px;" href="index.html" >HOME</a></li>
-            <li style="float:left;padding:15px;">My <?php echo $name; ?>s, By Ricki Dee</li>
+            <li><a class="text-link-button header-item header-home-item text-white" href="index.html" >HOME</a></li>
+            <li class="header-item" >My <?php echo $name; ?>s, By Ricki Dee</li>
         </ul>
     </div>
 </div>
@@ -15,10 +15,9 @@
     <a href="index.html"  class="text-link-button sidebar-item">HOME</a>
 </nav>  
 
-
 <style>
-
-
     
 
 </style>
+
+<!-- style="float:left;padding:15px;" -->
