@@ -8,7 +8,7 @@
 
     $cssPath = 'style/css/style.css';
     $indexCssPath = 'style/css/index-style.css';
-    $headerCssPath = 'style/css/header-all-style.css';
+    $menusPath = 'style/css/menus-style.css';
     $jsPath = 'scripts/main.js'; 
 
     // forces refresh of css and js
@@ -30,12 +30,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Cooking ONLY!</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <base href="https://cooking-blog-ricki-dee.herokuapp.com/">
-        <!-- <base href="/Desktop/basic%20websites/CookingBlog/"> -->
+        <!-- <base href="https://cooking-blog-ricki-dee.herokuapp.com/"> -->
+        <base href="/Desktop/basic%20websites/CookingBlog/">
         <link rel="stylesheet" type="text/css" media="screen" href="<?php echo auto_version($cssPath); ?>" />
 
         <link rel="stylesheet" type="text/css" media="screen" href="<?php echo auto_version($indexCssPath); ?>" /> 
-        <link rel="stylesheet" type="text/css" media="screen" href="<?php echo auto_version($headerCssPath); ?>" />       
+        <link rel="stylesheet" type="text/css" media="screen" href="<?php echo auto_version($menusPath); ?>" />       
 
         <script src="<?php echo auto_version($jsPath); ?>" ></script>
         <link rel="icon" 

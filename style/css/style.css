@@ -25,13 +25,22 @@ img {
     padding: 10px;
 }
 
+/* colors */
+.text-white {
+    color:white!important;
+}
+
+/* standard style for link buttons */
 .text-link-button {
     text-decoration:none;
-    color:white;
     background-color:inherit;
     cursor:pointer;
     text-align:center;
+    display:inline-block;
+    color: inherit;
+    text-align: center;
 }
+
 
 .text-link-button:hover {
     background-color:#E36383!important;
@@ -70,20 +79,6 @@ img {
 }
 
 
-
-.w3-sidebar{
-    height:100%;
-    width:15%;
-    top: 0;
-    left: 0;
-    margin-top: 58px;
-
-    background-color:#F6CBD6;
-    position:fixed!important;
-    overflow:auto;
-    display:none;
-}
-
 .w3-white{
     color:#000!important;
     background-color:#fff!important
@@ -108,19 +103,7 @@ img {
     float:right!important
 }
 
-/* Need to consolidate into generic sidebar div */
 
-
-.sidebar-text {
-    /* TODO: come back to this */
-    /* overflow: hidden;
-    text-overflow: ellipsis;
-    word-wrap: break-word;
-    display: block; */
-    line-height: 2em;
-    font-size:2vw;
-    position: relative;
-}
 
 .recipe-sidebar {
     width: 15%;
@@ -135,47 +118,13 @@ img {
 
 
 
-.w3-bar-block {
-    /* width:100%;
-    min-width:100%; */
-    text-align:right;
-    /* padding:8px 16px; */
-    display:block;
-    border:none;
-    white-space:normal;
-    float:none;
-    outline:0;
-}
-
-.w3-card {
-    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-}
-
-/* .w3-top{
-    position:fixed;
-    width:100%;
-    z-index:1;
-    top:0;
-} */
-
 
 .w3-animate-left{
     position:relative;
     animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}
 }
 
-.w3-bar-item{
-    padding:8px 16px;
-    float:left;
-    /* float:none; */
-    width:80%;
-    /* width:100%; */
-    border:none;
-    display:block;
-    outline:0;
-    text-align:right;
-    white-space:normal;
-}
+
 
 .w3-button{
     border:none;

@@ -1,7 +1,7 @@
 <div class="header-top">
     <div class="header-top-text header">
         <ul>
-            <li><a class="text-link-button" style="float:left; padding:15px;" href="index.html" >HOME</a></li>
+            <li><a class="text-link-button text-white" style="float:left; padding:15px;" href="index.html" >HOME</a></li>
             <li style="float:left;padding:15px;">My <?php echo $name; ?>s, By Ricki Dee</li>
         </ul>
     </div>
@@ -9,14 +9,16 @@
 
 
 
-<nav class="w3-sidebar w3-bar-block w3-card sidebar-text" id="indexSidebar">
-    <a href="#aboutme" class="w3-bar-item w3-button">About Me</a>
-    <a href="<?php echo $recipePagePath; ?>jam.php" class="w3-bar-item w3-button">Jam</a>
-    <a href="index.html"  class="w3-bar-item w3-button">HOME</a>
+<nav class="standard-sidebar sidebar-block shadow sidebar-text" id="indexSidebar">
+    <a href="#aboutme" class="text-link-button sidebar-item">About Me</a>
+    <a href="<?php echo $recipePagePath; ?>jam.php" class="text-link-button sidebar-item ">Jam</a>
+    <a href="index.html"  class="text-link-button sidebar-item">HOME</a>
 </nav>  
 
 
 <style>
+
+
     
 
 </style>
