@@ -9,7 +9,7 @@
 
 
 
-<nav class="standard-sidebar sidebar-block shadow sidebar-text" id="indexSidebar">
+<nav class="standard-sidebar sidebar-block shadow sidebar-text" id="recipeSidebar">
     <?php foreach ($recipeInfo as $block): ?>
             <a 
                 href="recipe-pages/<?php echo $name; ?>.php?page=<?php echo $name; ?>#<?php echo $block[1]; ?>"  
@@ -19,3 +19,10 @@
         </hr>
     <?php endforeach; ?>
 </nav>  
+
+<style>
+
+
+
+
+</style>

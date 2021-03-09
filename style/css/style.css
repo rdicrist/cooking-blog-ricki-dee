@@ -27,21 +27,9 @@ img {
     color: #000000;
 }
 
-.recipe {
-    text-align: center;
-    border: 3px solid purple;
-    margin: auto;
-    /* width: 70%; */
-    padding: 10px;
-    height: 100%;
-}
 
-.recipe-block {
-    margin-top:58px;
-    margin-left: 15px;
-    width: 85%;
-    float: right;
-}
+
+
 
 .title {
     text-align: center;
@@ -51,12 +39,7 @@ img {
     text-align: center;
 } */
 
-/* .recipe {
-    text-align: center;
-    border: 3px solid purple;
-    margin: auto;
-    padding: 10px;
-} */
+
 
 /* colors */
 .text-white {
@@ -79,11 +62,7 @@ img {
     background-color:#E36383!important;
 }
 
-/* .recipe p {
-    font: arial;
-    font-size: 14px;
-    /* background-color: yellow ; 
-} */ 
+
 
 .jam-list {
     text-align: center;
@@ -142,12 +121,6 @@ img {
     width: 15%;
 }
 
-/* .recipe-block {
-    margin-top:58px;
-    margin-left: 15px;
-    width: 85%;
-    float: right;
-} */
 
 
 
@@ -260,20 +233,7 @@ img {
 }
   /* Make sidebar into topbar for screens under 800px wide */
 @media screen and (max-width: 810px) {
-    .w3-sidebar {
-        width: 50%;
-        margin-top:0%;
-        height: auto; 
-        position: relative;
-        z-index: 2;
-    }
-    .sidebar-text{
-        font-size:7vw;
-    }
-    .recipe-block {
-        margin-top: 100px;
-        margin-left: 0;
-    }
+
 
     .sidebar-mobile {
         display: block;

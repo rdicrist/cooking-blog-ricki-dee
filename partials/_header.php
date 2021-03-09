@@ -8,7 +8,8 @@
 
     $cssPath = 'style/css/style.css';
     $indexCssPath = 'style/css/index-style.css';
-    $menusPath = 'style/css/menus-style.css';
+    $menusCssPath = 'style/css/menus-style.css';
+    $recipeCssPath = 'style/css/recipe-style.css';
     $jsPath = 'scripts/main.js'; 
 
     // forces refresh of css and js
@@ -29,13 +30,14 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Cooking ONLY!</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
         <base href="https://cooking-blog-ricki-dee.herokuapp.com/">
-        <!-- <base href="/Desktop/basic%20websites/CookingBlog/"> -->
+        <base href="/Desktop/basic%20websites/CookingBlog/">
         <link rel="stylesheet" type="text/css" media="screen" href="<?php echo auto_version($cssPath); ?>" />
 
         <link rel="stylesheet" type="text/css" media="screen" href="<?php echo auto_version($indexCssPath); ?>" /> 
-        <link rel="stylesheet" type="text/css" media="screen" href="<?php echo auto_version($menusPath); ?>" />       
+        <link rel="stylesheet" type="text/css" media="screen" href="<?php echo auto_version($menusCssPath); ?>" /> 
+        <link rel="stylesheet" type="text/css" media="screen" href="<?php echo auto_version($recipeCssPath); ?>" />       
 
         <script src="<?php echo auto_version($jsPath); ?>" ></script>
         <link rel="icon" 

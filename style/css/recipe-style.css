@@ -1,0 +1,28 @@
+.recipe-block {
+    /* margin-top:58px; */
+    margin-left: 15px;
+    width: 85%;
+    float: right;
+    padding-top: 5%;
+}
+
+.recipe {
+    text-align: center;
+    border: 3px solid purple;
+    margin: auto;
+    /* width: 70%; */
+    padding: 10px;
+    height: 100%;
+}
+
+
+@media screen and (max-width: 810px) {
+
+
+    .recipe-block {
+        margin-top: 0px;
+        margin-left: 0;
+        padding-top: 10%;
+    }
+
+}

@@ -15,20 +15,6 @@
 <?php include('../partials/recipe-pages-menus.php');?>
 
 
-<!-- TODO: fix mobile sidebar -->
-<div class="sidebar-mobile" id="mobileSidebar">
-    <ul>
-        <li><a href="../index.php">HOME</a></li>
-        <li class="jam-dropdown">
-            <a href="javascript:void(0)" class="jam-dropdown-btn">Jam</a>
-            <div class="jam-dropdown-content" id="jamDropdownContent">
-                <a href="#recipeone">Raspberry Lime</a>
-                <a href="#recipetwo">Banana</a>
-                <a href="#recipethree">Peach "Cin"</a>
-            </div>
-        </li>
-    </ul>
-</div>
 
 <!-- put into recipepage partial, reference vars defined in file (same name) -->
 <!-- Recipe Blocks -->
