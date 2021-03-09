@@ -1,5 +1,5 @@
 <?php 
-    include('../partials/_header.php');
+    // include('../partials/_header.php');
 
     $recipe = $_GET['recipe'];
     // echo $recipe;

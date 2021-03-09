@@ -8,25 +8,7 @@
 
     $name = $_GET['page'];
 ?>
-<style>
-    #recipeone {
-        background: url("<?php echo $imagePath; ?>rasplime.jpg") repeat;
-        border: 2px solid black;
-    }
 
-    .inner-box {
-        margin: 30px;
-        background-color: #ffffff;
-        border: 1px solid black;
-        opacity: 0.6;
-    }
-
-    .inner-box p {
-        margin: 5%;
-        font-weight: bold;
-        color: #000000;
-    }
-</style>
 
 <?php include('../partials/_header.php');?>
 
@@ -54,12 +36,21 @@
 
     <?php foreach ($recipeInfo as $recipe): ?>
         <div class="recipe" style="background: url('<?php echo $imagePath. $recipe[1] ?>.jpg') repeat;">
-            <div class="inner-box">
-                <div class="title"><h1><?php echo $recipe[0]; ?></h1></div>
-                <p><iframe src="<?php echo $recipeTextPath; ?>index.php?recipe=<?php echo $recipe[1]; ?>" frameborder="0" height="400" width="95%"></iframe></p>
-                <!-- <p><iframe src="< ?php echo $recipeTextPath; ?>banana.html" frameborder="0" height="400" width="95%"></iframe></p> -->
-            </div>
+            <hr id="<?php echo $recipe[1]; ?>">
+                <div class="recipe-inner-box">
+                    <div class="title"><h1><?php echo $recipe[0]; ?></h1></div>
+
+                    <p>
+                        <!-- < ?php include(  '../recipes/index.php'); ?> -->
+                        <iframe src="<?php echo $recipeTextPath; ?>index.php?recipe=<?php echo $recipe[1]; ?>" 
+                            frameborder="0" 
+                            class="recipe-iframe">
+                        </iframe>
+                    </p>
+                </div>
+            </hr>
         </div>
+        
     <?php endforeach; ?>
 
     <!-- <a href="< ?php echo $miscPath; ?>tips.php#tipthree">Click here for info on peeling the peaches!</a>  -->
@@ -69,5 +60,27 @@
     
    
  </div> <!-- end recipe blocks  -->
+
+
+ <style>
+
+        .recipe-iframe {
+            height: 400px;
+            width: 95%;
+        }
+
+        @media screen and (max-width: 800px) {  
+            .recipe-iframe {
+                /* position: absolute;
+                height: 100%; */
+                /* overflow: hidden; */
+/* width: 860px; */
+height: 800px;
+/* position: absolute; */
+                
+            }
+        }
+
+ </style>
 
 

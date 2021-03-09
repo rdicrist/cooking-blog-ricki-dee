@@ -13,8 +13,18 @@ img {
     clear: both;
 }
 
-.title {
-    text-align: center;
+.recipe-inner-box {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    height: 100%;
+}
+
+.recipe-inner-box p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
 }
 
 .recipe {
@@ -23,7 +33,30 @@ img {
     margin: auto;
     /* width: 70%; */
     padding: 10px;
+    height: 100%;
 }
+
+.recipe-block {
+    margin-top:58px;
+    margin-left: 15px;
+    width: 85%;
+    float: right;
+}
+
+.title {
+    text-align: center;
+}
+
+/* .title {
+    text-align: center;
+} */
+
+/* .recipe {
+    text-align: center;
+    border: 3px solid purple;
+    margin: auto;
+    padding: 10px;
+} */
 
 /* colors */
 .text-white {
@@ -109,12 +142,12 @@ img {
     width: 15%;
 }
 
-.recipe-block {
+/* .recipe-block {
     margin-top:58px;
     margin-left: 15px;
     width: 85%;
     float: right;
-}
+} */
 
 
 
@@ -324,28 +357,6 @@ img {
 
 
 /* RECIPE FILES  */
-.actual-recipe-container .border {
-    border: 2px solid red;
-}
-.actual-recipe-container .ingredients {
-    
-    position: fixed;
-    width: 40%;
-    height: 95%;
-    font-size:2vw;
-}
-.actual-recipe-container .instructions {
-    /* position: relative; */
-    /* display: block; */
-    
-
-    width: 55%;
-    float: right;
-    /* box-sizing: border-box; */
-}
-
-
-/* RECIPE FILES  */
 /* .actual-recipe-container .border {
     border: 2px solid red;
 }
@@ -357,12 +368,11 @@ img {
     font-size:2vw;
 }
 .actual-recipe-container .instructions {
-    /* position: relative; 
-    display: block;
+    
 
     width: 55%;
     float: right;
-    /* box-sizing: border-box; 
 } */
+
 
  

@@ -10,14 +10,12 @@
 
 
 <nav class="standard-sidebar sidebar-block shadow sidebar-text" id="indexSidebar">
-    <a href="#aboutme" class="text-link-button sidebar-item">About Me</a>
-    <a href="<?php echo $recipePagePath; ?>jam.php" class="text-link-button sidebar-item ">Jam</a>
-    <a href="index.html"  class="text-link-button sidebar-item">HOME</a>
+    <?php foreach ($recipeInfo as $block): ?>
+            <a 
+                href="recipe-pages/<?php echo $name; ?>.php?page=<?php echo $name; ?>#<?php echo $block[1]; ?>"  
+                class="text-link-button sidebar-item ">
+                <?php echo $block[0]; ?>
+            </a>
+        </hr>
+    <?php endforeach; ?>
 </nav>  
-
-<style>
-    
-
-</style>
-
-<!-- style="float:left;padding:15px;" -->

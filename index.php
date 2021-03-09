@@ -13,16 +13,16 @@
 
 <nav class="standard-sidebar sidebar-block shadow sidebar-text w3-animate-left" style="display:none;" id="indexSidebar">
     <a href="#aboutme" onclick="sb_close('indexSidebar', 'indexBox')" class="text-link-button sidebar-item">About Me</a>
-    <a href="<?php echo $recipePagePath; ?>jam.php" onclick="sb_close('indexSidebar', 'indexBox')" class="text-link-button sidebar-item ">Jam</a>
+    <?php foreach ($indexBlocks as $block): ?>
+        <a 
+            href="<?php echo $recipePagePath. $block[1]; ?>.php" 
+            onclick="sb_close('indexSidebar', 'indexBox')" 
+            class="text-link-button sidebar-item ">
+            <?php echo $block[0]; ?>
+        </a>
+    <?php endforeach; ?>
     <a href="javascript:void(0)" onclick="sb_close('indexSidebar', 'indexBox')" class="text-link-button sidebar-item">Close Menu</a>
 </nav> 
-
-<!-- Sidebar -->
-<!-- <nav class="w3-sidebar w3-bar-block w3-card w3-top sidebar-text w3-animate-left" style="display:none;" id="indexSidebar">
-    <a href="#aboutme" onclick="sb_close('indexSidebar')" class="w3-bar-item w3-button">About Me</a>
-    <a href="<?php echo $recipePagePath; ?>jam.php" onclick="sb_close('indexSidebar')" class="w3-bar-item w3-button">Jam</a>
-    <a href="javascript:void(0)" onclick="sb_close('indexSidebar')" class="w3-bar-item w3-button">Close Menu</a>
-</nav> -->
 
 
 <div class="header-top">
@@ -44,6 +44,7 @@
                     <div class='pic-hover'>
                         <h2><?php echo $block[0]; ?></h2>
                     </div>
+                    
                     <a href="<?php echo $recipePagePath. $block[1]; ?>.php?page=<?php echo $block[1]?>">
                         <img src="<?php echo $imagePath. $block[1];?>.jpg" alt="<?php echo $block[0]; ?>" style="width:100%">
                     </a>
@@ -68,62 +69,3 @@
 
 </div>
 
-
-<style>
-/* .w3-top{
-    position:fixed;
-    width:100%;
-    z-index:1;
-    top:0;
-    left: 0;
-    background-color: #EB99B8;
-}
-
-
-.w3-xlarge{
-    font-size:24px!important
-} */
-
-/* my own header */
-
-/* .header {
-    background-color: #ECBAE4;
-} */
-
-/* .header ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.header li {
-    display: inline;
-} */
-
-.w3-sidebar {
-}
-
-.w3-bar-block {
-
-} 
-
-.w3-card {
-    
-} 
-
-.w3-top {
-
-} 
-
-.sidebar-text {
-
-} 
-
-.w3-animate-left {
-
-}
-
-        
-
-
-</style>
