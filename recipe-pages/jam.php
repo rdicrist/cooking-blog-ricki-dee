@@ -44,7 +44,10 @@
                         <!-- < ?php include(  '../recipes/index.php'); ?> -->
                         <iframe src="<?php echo $recipeTextPath; ?>index.php?recipe=<?php echo $recipe[1]; ?>" 
                             frameborder="0" 
-                            class="recipe-iframe">
+                            scrolling="no" 
+                            width="95%"
+                            onload="resizeIframe(this)"
+                            >
                         </iframe>
                     </p>
                 </div>
@@ -61,25 +64,13 @@
    
  </div> <!-- end recipe blocks  -->
 
+ <!-- frameborder="0" 
+                            class="recipe-iframe" -->
+
 
  <style>
 
-        .recipe-iframe {
-            height: 400px;
-            width: 95%;
-        }
 
-        @media screen and (max-width: 800px) {  
-            .recipe-iframe {
-                /* position: absolute;
-                height: 100%; */
-                /* overflow: hidden; */
-/* width: 860px; */
-height: 800px;
-/* position: absolute; */
-                
-            }
-        }
 
  </style>
 
