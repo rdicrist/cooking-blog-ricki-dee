@@ -11,6 +11,17 @@
     
 ?>
 
+<div class="header-top">
+    <div class="header-top-text header">
+        <ul>
+            <li style="float:left;"><div class="head-button" onclick="sb_opposite('indexSidebar', 'indexBox')">☰</div></li>
+            <li style="float:left;padding:15px;">My Food, By Ricki Dee</li>
+        </ul>
+    </div>
+</div>
+
+
+
 <nav class="standard-sidebar sidebar-block shadow sidebar-text sidebar-animation" style="display:none;" id="indexSidebar">
     <a href="#aboutme" onclick="sb_close('indexSidebar', 'indexBox')" class="text-link-button sidebar-item">About Me</a>
     <?php foreach ($indexBlocks as $block): ?>
@@ -25,14 +36,7 @@
 </nav> 
 
 
-<div class="header-top">
-    <div class="header-top-text header">
-        <ul>
-            <li style="float:left;"><div class="head-button" onclick="sb_opposite('indexSidebar', 'indexBox')">☰</div></li>
-            <li style="float:left;padding:15px;">My Food, By Ricki Dee</li>
-        </ul>
-    </div>
-</div>
+
 
 
 <div class="index-box" id="indexBox">

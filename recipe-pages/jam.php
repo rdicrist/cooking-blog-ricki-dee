@@ -18,7 +18,7 @@
 
 <!-- put into recipepage partial, reference vars defined in file (same name) -->
 <!-- Recipe Blocks -->
-<div class="recipe-block">
+<div class="recipe-block" id="recipeBlock">
 
     <?php foreach ($recipeInfo as $recipe): ?>
         <div class="recipe" style="background: url('<?php echo $imagePath. $recipe[1] ?>.jpg') repeat;">
@@ -50,14 +50,7 @@
    
  </div> <!-- end recipe blocks  -->
 
- <!-- frameborder="0" 
-                            class="recipe-iframe" -->
 
 
- <style>
-
-
-
- </style>
 
 

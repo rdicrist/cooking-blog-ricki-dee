@@ -26,3 +26,19 @@ function resizeIframe(obj) {
         obj.contentWindow.location.reload(); 
     });
 };
+
+function rd_open(id) {
+    document.getElementById(id).style.display = "block";
+};
+
+function rd_close(id) {
+    document.getElementById(id).style.display = "none";
+};
+
+function rd_opposite(id) {
+    if (document.getElementById(id).style.display !== "none") {
+        rd_close(id);
+    } else {
+        rd_open(id);
+    };
+};

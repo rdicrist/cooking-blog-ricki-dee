@@ -2,7 +2,7 @@
 .header-top {
     position:fixed;
     width:100%;
-    z-index:1;
+    z-index:2;
     top:0;
     left: 0;
     background-color: #EB99B8;
@@ -24,19 +24,17 @@ header li {
 }
 
 .header-item {
-    float:left; 
+    float:right; 
     padding: 15px;
     
 }
 
-.header-home-item {
-    width:15%; 
-    padding: 0px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+.header-title-item {
+    padding: 15px;
+    float:left; 
 }
 
-/* sidebar */
+/* standard sidebar */
 .standard-sidebar {
     height:100%;
     width:15%;
@@ -87,4 +85,27 @@ header li {
         animation:animateDown 0.4s}@keyframes animateDown{from{top:-300px;opacity:0} to{top:0;opacity:1}
     }
 
+}
+
+/* recipe sidebar */
+.recipe-dropdown {
+    width:100%;
+    top: 0;
+    right: 0;
+    margin-top: 58px;
+    background-color:#F6CBD6;
+    position:fixed!important;
+    overflow:auto;
+    z-index: 1;
+}
+
+
+@media screen and (max-width: 800px) { 
+    #recipeSidebar {
+        display: none;
+    }
+
+    .recipe-menu-button {
+        display: block!important;
+    }
 }

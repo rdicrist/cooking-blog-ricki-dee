@@ -13,31 +13,8 @@ img {
     clear: both;
 }
 
-.recipe-inner-box {
-    margin: 30px;
-    background-color: #ffffff;
-    border: 1px solid black;
-    opacity: 0.6;
-    height: 100%;
-}
-
-.recipe-inner-box p {
-    margin: 5%;
-    font-weight: bold;
-    color: #000000;
-}
 
 
-
-
-
-.title {
-    text-align: center;
-}
-
-/* .title {
-    text-align: center;
-} */
 
 
 
@@ -115,11 +92,6 @@ img {
     float:right!important
 }
 
-
-
-.recipe-sidebar {
-    width: 15%;
-}
 
 
 
