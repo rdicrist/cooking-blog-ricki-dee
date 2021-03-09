@@ -11,7 +11,7 @@
     
 ?>
 
-<nav class="standard-sidebar sidebar-block shadow sidebar-text w3-animate-left" style="display:none;" id="indexSidebar">
+<nav class="standard-sidebar sidebar-block shadow sidebar-text sidebar-animation" style="display:none;" id="indexSidebar">
     <a href="#aboutme" onclick="sb_close('indexSidebar', 'indexBox')" class="text-link-button sidebar-item">About Me</a>
     <?php foreach ($indexBlocks as $block): ?>
         <a 
@@ -44,7 +44,7 @@
                     <div class='pic-hover'>
                         <h2><?php echo $block[0]; ?></h2>
                     </div>
-                    
+
                     <a href="<?php echo $recipePagePath. $block[1]; ?>.php?page=<?php echo $block[1]?>">
                         <img src="<?php echo $imagePath. $block[1];?>.jpg" alt="<?php echo $block[0]; ?>" style="width:100%">
                     </a>

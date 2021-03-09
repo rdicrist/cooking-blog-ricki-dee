@@ -38,7 +38,6 @@ header li {
 
 /* sidebar */
 .standard-sidebar {
-
     height:100%;
     width:15%;
     top: 0;
@@ -48,13 +47,10 @@ header li {
     position:fixed!important;
     overflow:auto;
     display:none;
-
 } 
 
 .sidebar-block {
-
     display:block;
-
 } 
 
 .shadow {
@@ -67,11 +63,28 @@ header li {
     display:block;
     outline:0;
     white-space:normal;
-
 }
 
 .sidebar-text {
     line-height: 2em;
     font-size:2vw;
     position: relative;
+}
+
+.sidebar-animation {
+    position:relative;
+    animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}
+}
+
+@media screen and (max-width: 800px) { 
+
+    .standard-sidebar {
+        width:25%;
+    }
+
+    .sidebar-animation {
+        position:relative;
+        animation:animateDown 0.4s}@keyframes animateDown{from{top:-300px;opacity:0} to{top:0;opacity:1}
+    }
+
 }
