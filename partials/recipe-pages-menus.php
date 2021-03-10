@@ -37,15 +37,3 @@
             </a>
     <?php endforeach; ?>
 </nav>  
-
-
-
-
-<style>
-
-/* sidebar */
-
-
-
-
-</style>

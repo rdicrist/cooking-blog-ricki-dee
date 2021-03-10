@@ -23,15 +23,15 @@
 
 
 <nav class="standard-sidebar sidebar-block shadow sidebar-text sidebar-animation" style="display:none;" id="indexSidebar">
-    <a href="#aboutme" onclick="sb_close('indexSidebar', 'indexBox')" class="text-link-button sidebar-item">About Me</a>
     <?php foreach ($indexBlocks as $block): ?>
         <a 
-            href="<?php echo $recipePagePath. $block[1]; ?>.php" 
+            href="<?php echo $recipePagePath. $block[1]; ?>.php?page=<?php echo $block[1]?>" 
             onclick="sb_close('indexSidebar', 'indexBox')" 
             class="text-link-button sidebar-item ">
             <?php echo $block[0]; ?>
         </a>
     <?php endforeach; ?>
+    <a href="#aboutme" onclick="sb_close('indexSidebar', 'indexBox')" class="text-link-button sidebar-item">About Me</a>
     <a href="javascript:void(0)" onclick="sb_close('indexSidebar', 'indexBox')" class="text-link-button sidebar-item">Close Menu</a>
 </nav> 
 
@@ -42,8 +42,9 @@
 <div class="index-box" id="indexBox">
     
     <?php foreach ($indexBlocks as $block): ?>
-        <div class="index-recipe-block clear">
-            <hr id="<?php echo $block[1]; ?>">
+        <hr id="<?php echo $block[1]; ?>">
+            <div class="index-recipe-block clear">
+            
                 <div class='container'>
                     <div class='pic-hover'>
                         <h2><?php echo $block[0]; ?></h2>
@@ -54,8 +55,9 @@
                     </a>
                     
                 </div>
-            </hr>
-        </div>
+            
+            </div>
+        </hr>
     <?php endforeach; ?>
 
 
