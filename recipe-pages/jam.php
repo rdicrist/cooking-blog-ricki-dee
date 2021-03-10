@@ -3,7 +3,8 @@
     $recipeInfo = [
                 ['Raspberry Lime Jam!', 'rasplime'],
                 ['Banana Jam!', 'banana'],
-                ['Peach "Cin" Jam!', 'peachcin']
+                ['Peach "Cin" Jam!', 'peachcin'],
+                ['Cranberry Holiday Jam!', 'cranberry']
             ];
 
     $name = $_GET['page'];
@@ -28,7 +29,7 @@
 
                     <p>
                         <!-- < ?php include(  '../recipes/index.php'); ?> -->
-                        <iframe src="<?php echo $recipeTextPath; ?>index.php?recipe=<?php echo $recipe[1]; ?>" 
+                        <iframe src="<?php echo $recipeTextPath; ?>index.php?recipe=jam/<?php echo $recipe[1]; ?>" 
                             frameborder="0" 
                             scrolling="no" 
                             width="95%"

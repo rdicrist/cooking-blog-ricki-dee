@@ -3,8 +3,10 @@
     $indexBlocks =
     [
         ['Jam Recipes', 'jam'],
-        ['Dessert Recipes', 'desserts'],
-        ['Vegetarian', 'vegetables']
+        ['Dessert Recipes', 'dessert'],
+        ['Drink Recipes', 'drinks'],
+        ['Pasta Recipes', 'pasta'],
+        ['Snacks', 'snacks']
     ];
 
     include('partials/_header.php');
