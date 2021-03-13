@@ -26,7 +26,7 @@
             <hr id="<?php echo $recipe[1]; ?>">
                 <div class="recipe-inner-box">
                     <div class="title"><h1><?php echo $recipe[0]; ?></h1></div>
-
+                <p>
                     <iframe allowtransparency="true" style="background: white;" src="<?php echo $recipeTextPath; ?>index.php?recipe=jam/<?php echo $recipe[1]; ?>" 
                         frameborder="0" 
                         scrolling="no" 
@@ -34,7 +34,7 @@
                         onload="resizeIframe(this)"
                         >
                     </iframe>
-
+                </p>
                 </div>
             </hr>
         </div>
@@ -49,12 +49,5 @@
    
  </div> <!-- end recipe blocks  -->
 
-
-<style>
-    .recipe-iframe {
-        background-color: white!important;
-        padding-bottom: 5%;
-    }
-</style>
 
 

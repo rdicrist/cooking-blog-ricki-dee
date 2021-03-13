@@ -14,7 +14,7 @@
 }
 
 .recipe-inner-box {
-    margin: 30px;
+    margin: 10px;
     background-color: #FCEEF3;
     border: 1px solid black;
     opacity: 0.8;
@@ -22,7 +22,7 @@
 }
 
 .recipe-inner-box p {
-    margin: 5%;
+    margin-bottom: 5%;
     font-weight: bold;
     color: #000000;
 }
@@ -46,7 +46,16 @@
 /* recipe container iframe */
     .actual-recipe-container .border {
         border: 2px solid red;
+        margin: 5px;
     }
+
+    .actual-recipe-container .border ul {
+        margin-left: 5px;
+    } 
+
+    .actual-recipe-container .border ol {
+        margin-left: 5px;
+    } 
 
     .actual-recipe-container .ingredients {
         position: fixed;
