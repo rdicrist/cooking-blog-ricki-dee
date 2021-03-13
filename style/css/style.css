@@ -2,6 +2,10 @@ html {
     background-color: #FCEEF3;
 }
 
+/* html #document {
+    background-color: white;
+} */
+
 img {
     display: block;
     margin-left: auto;
