@@ -23,7 +23,7 @@
 </div>
 
 
-
+<!-- full screen sidebar -->
 <nav class="standard-sidebar sidebar-block shadow sidebar-text sidebar-animation" style="display:none;" id="indexSidebar">
     <?php foreach ($indexBlocks as $block): ?>
         <a 
@@ -40,7 +40,7 @@
 
 
 
-
+<!-- blocks of recipe types -->
 <div class="index-box" id="indexBox">
     
     <?php foreach ($indexBlocks as $block): ?>
@@ -71,6 +71,7 @@
         </hr>
     </div>
 
+    <!-- footer -->
     <div class="index-block clear">
         <?php include('partials/_footer.php');?>
     </div>
