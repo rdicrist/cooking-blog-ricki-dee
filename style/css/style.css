@@ -208,7 +208,7 @@ img {
     display: none;
 }
   /* Make sidebar into topbar for screens under 800px wide */
-@media screen and (max-width: 1300x) {
+@media screen and (max-width: 1000x) {
 
 
     .sidebar-mobile {
