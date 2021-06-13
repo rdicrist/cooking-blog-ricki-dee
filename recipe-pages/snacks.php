@@ -1,7 +1,7 @@
 <?php 
     // title, imgsource/recipesource (dont include filetype)
     $recipeInfo = [
-                // ['Fall Explosion Pie!', 'fall_explosion_pie']
+                // ['Raspberry Lime Jam!', 'rasplime'],
                 // ['Banana Jam!', 'banana'],
                 // ['Peach "Cin" Jam!', 'peachcin'],
                 // ['Cranberry Holiday Jam!', 'cranberry']
