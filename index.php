@@ -78,3 +78,15 @@
 
 </div>
 
+<!-- <script>
+    function thisIsNormal() {
+        console.log('normal js');
+    };
+
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function(e) {
+        console.log('jquery working');
+    });
+</script> -->
