@@ -31,7 +31,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Cooking ONLY!</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- <base href="https://cooking-blog-ricki-dee.herokuapp.com/"> -->
+        <base href="https://cooking-blog-ricki-dee.herokuapp.com/">
         <base href="/Desktop/basic%20websites/CookingBlog/">
         <link rel="stylesheet" type="text/css" media="screen" href="<?php echo auto_version($cssPath); ?>" />
 
