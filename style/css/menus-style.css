@@ -74,7 +74,7 @@ header li {
     animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}
 }
 
-@media screen and (max-width: 800px) { 
+@media screen and (max-width: 1300px) { 
 
     .standard-sidebar {
         width:25%;
@@ -100,7 +100,7 @@ header li {
 }
 
 
-@media screen and (max-width: 800px) { 
+@media screen and (max-width: 1300px) { 
     #recipeSidebar {
         display: none;
     }
