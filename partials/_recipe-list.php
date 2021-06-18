@@ -11,36 +11,38 @@
 else:
 ?>
 
-<div class="recipe-block" id="recipeBlock">
+<div style="position:absolute; width:100%; height:100%; display:inline-block; z-index:5;"></div>
 
-    <?php foreach ($recipeInfo as $recipe): 
-        
-        ?>
-        <div class="recipe" style="background: url('<?php echo $imagePath. $recipe[1] ?>.jpg') repeat;">
-            <hr id="<?php echo $recipe[1]; ?>">
-                <div class="recipe-inner-box">
-                    <div class="title"><h1><?php echo $recipe[0]; ?></h1></div>
-                <p>
-                    <iframe allowtransparency="true" style="background: white;" src="<?php echo $recipeTextPath; ?>index.php?recipe=<?php echo $name. '/'. $recipe[1]; ?>" 
-                        frameborder="0" 
-                        scrolling="no" 
-                        width="95%"
-                        onload="resizeIframe(this)"
-                        >
-                    </iframe>
-                </p>
-                </div>
-            </hr>
-        </div>
-        
-    <?php endforeach; ?>
+    <div class="recipe-block" id="recipeBlock">
 
-    <!-- <a href="< ?php echo $miscPath; ?>tips.php#tipthree">Click here for info on peeling the peaches!</a>  -->
-    <!-- put above inside peachcin file -->
+        <?php foreach ($recipeInfo as $recipe): 
+            
+            ?>
+            <div class="recipe" style="background: url('<?php echo $imagePath. $recipe[1] ?>.jpg') repeat;">
+                <hr id="<?php echo $recipe[1]; ?>">
+                    <div class="recipe-inner-box">
+                        <div class="title"><h1><?php echo $recipe[0]; ?></h1></div>
+                    <p>
+                        <iframe class= "recipe-iframe" allowtransparency="true" style="background: white;" src="<?php echo $recipeTextPath; ?>index.php?recipe=<?php echo $name. '/'. $recipe[1]; ?>" 
+                            frameborder="0" 
+                            scrolling="no" 
+                            width="95%"
+                            onload="resizeIframe(this)"
+                            >
+                        </iframe>
+                    </p>
+                    </div>
+                </hr>
+            </div>
+            
+        <?php endforeach; ?>
+
+        <!-- <a href="< ?php echo $miscPath; ?>tips.php#tipthree">Click here for info on peeling the peaches!</a>  -->
+        <!-- put above inside peachcin file -->
+        
+        <?php include('../partials/_footer.php');?>
+        
     
-    <?php include('../partials/_footer.php');?>
-    
-   
- </div> <!-- end recipe blocks  -->
+    </div> <!-- end recipe blocks  -->
 
  <?php endif; ?>

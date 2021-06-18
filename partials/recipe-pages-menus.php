@@ -14,13 +14,13 @@
     </div>
 </div>
 
-<!-- recipe dropdown menu to right, doesnt display when full screen -->
+<!-- recipe dropdown menu to right, doesnt display when full screen  onclick="rd_close('recipeDropdown', 'recipeBlock')" -->
 <nav class="recipe-dropdown sidebar-text sidebar-animation" id="recipeDropdown" style="display:none;">
     <?php foreach ($recipeInfo as $block): ?>
         <a 
             href="recipe-pages/<?php echo $name; ?>.php?page=<?php echo $name; ?>#<?php echo $block[1]; ?>" 
-            onclick="rd_close('recipeDropdown', 'recipeBlock')" 
-            class="text-link-button sidebar-item ">
+            
+            class="text-link-button sidebar-item recipe-sidebar-close">
             <?php echo $block[0]; ?>
         </a>
     <?php endforeach; ?>

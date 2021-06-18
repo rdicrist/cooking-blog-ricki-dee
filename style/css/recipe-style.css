@@ -2,13 +2,14 @@
     margin-left: 15px;
     width: 85%;
     float: right;
-    padding-top: 5%;
+    /* padding-top: 5%; */
 }
 
 .recipe {
     text-align: center;
     border: 3px solid purple;
-    margin: auto;
+    /* margin: auto; */
+    margin-top: 58px;
     padding: 10px;
     height: 100%;
 }
@@ -34,9 +35,9 @@
 
 @media screen and (max-width: 1000px) {
     .recipe-block {
-        margin-top: 0px;
+        /* margin-top: 75px; */
         margin-left: 0;
-        padding-top: 10%;
+        /* padding-top: 10%; */
         width: 100%;
         float: left;
     }

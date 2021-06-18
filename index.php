@@ -32,18 +32,13 @@
             <?php echo $block[0]; ?>
         </a>
     <?php endforeach; ?>
-    <!-- href="#aboutme" onclick="sb_close('indexSidebar', 'indexBox')"  <a href="#aboutme" onclick="sb_close('indexSidebar', 'indexBox')" class="text-link-button sidebar-item">About Me</a> -->
-    <!-- this href doesnt go to section in dev ??? -->
     <a 
-        href="index.php#jam"
-        onclick="sb_close('indexSidebar', 'indexBox')"
-        class="text-link-button sidebar-item"
+        href="index.php#aboutme"
+        class="text-link-button sidebar-item home-sidebar-close"
     >About Me</a>
-
     <a 
         href="javascript:void(0)" 
-        onclick="sb_close('indexSidebar', 'indexBox')" 
-        class="text-link-button sidebar-item"
+        class="text-link-button sidebar-item home-sidebar-close"
     >Close Menu</a>
 </nav> 
 
