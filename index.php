@@ -16,25 +16,35 @@
 <div class="header-top">
     <div class="header-top-text header">
         <ul>
-            <li style="float:left;"><div class="head-button" onclick="sb_opposite('indexSidebar', 'indexBox')">☰</div></li>
+            <li style="float:left;"><div id="homepageMenuToggle" class="head-button">☰</div></li>
             <li style="float:left;padding:15px;">My Food, By Ricki Dee</li>
         </ul>
     </div>
 </div>
 
 
-<!-- full screen sidebar -->
+<!-- full screen sidebar onclick="sb_close('indexSidebar', 'indexBox')" -->
 <nav class="standard-sidebar sidebar-block shadow sidebar-text sidebar-animation" style="display:none;" id="indexSidebar">
     <?php foreach ($indexBlocks as $block): ?>
         <a 
             href="<?php echo $recipePagePath. $block[1]; ?>.php?page=<?php echo $block[1]?>" 
-            onclick="sb_close('indexSidebar', 'indexBox')" 
             class="text-link-button sidebar-item ">
             <?php echo $block[0]; ?>
         </a>
     <?php endforeach; ?>
-    <a href="#aboutme" onclick="sb_close('indexSidebar', 'indexBox')" class="text-link-button sidebar-item">About Me</a>
-    <a href="javascript:void(0)" onclick="sb_close('indexSidebar', 'indexBox')" class="text-link-button sidebar-item">Close Menu</a>
+    <!-- href="#aboutme" onclick="sb_close('indexSidebar', 'indexBox')"  <a href="#aboutme" onclick="sb_close('indexSidebar', 'indexBox')" class="text-link-button sidebar-item">About Me</a> -->
+    <!-- this href doesnt go to section in dev ??? -->
+    <a 
+        href="index.php#jam"
+        onclick="sb_close('indexSidebar', 'indexBox')"
+        class="text-link-button sidebar-item"
+    >About Me</a>
+
+    <a 
+        href="javascript:void(0)" 
+        onclick="sb_close('indexSidebar', 'indexBox')" 
+        class="text-link-button sidebar-item"
+    >Close Menu</a>
 </nav> 
 
 
