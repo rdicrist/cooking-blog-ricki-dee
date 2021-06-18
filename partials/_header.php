@@ -11,6 +11,7 @@
     $menusCssPath = 'style/css/menus-style.css';
     $recipeCssPath = 'style/css/recipe-style.css';
     $jsPath = 'scripts/main.js'; 
+    $jqueryPath = 'scripts/jquery.js';
 
     // forces refresh of css and js
     function auto_version($file='')
@@ -34,7 +35,7 @@
         <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
         <!-- <meta name="viewport" contents="device-width"> -->
         <base href="https://cooking-blog-ricki-dee.herokuapp.com/">
-        <base href="/Desktop/basic%20websites/CookingBlog/">
+        <!-- <base href="/Desktop/basic%20websites/CookingBlog/"> -->
 
         <link rel="stylesheet" type="text/css" media="screen" href="<?php echo auto_version($cssPath); ?>" />
         <link rel="stylesheet" type="text/css" media="screen" href="<?php echo auto_version($indexCssPath); ?>" /> 
@@ -43,6 +44,7 @@
 
         <script src="<?php echo auto_version($jsPath); ?>" ></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="<?php echo auto_version($jqueryPath); ?>" type="module"></script>
 
         <link rel="icon" 
           type="image/png" 
