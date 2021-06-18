@@ -89,4 +89,8 @@
     $(document).ready(function(e) {
         console.log('jquery working');
     });
+
+    $('body').click(function () {
+    $('div#nomore').hide();
+});
 </script> -->

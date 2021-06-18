@@ -14,9 +14,6 @@ else:
 <div class="recipe-block" id="recipeBlock">
 
     <?php foreach ($recipeInfo as $recipe): 
-        // if ($recipe[1]) {
-// put in check for in array here
-        // };
         
         ?>
         <div class="recipe" style="background: url('<?php echo $imagePath. $recipe[1] ?>.jpg') repeat;">
